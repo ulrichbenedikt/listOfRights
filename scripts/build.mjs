@@ -11,7 +11,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const dist = join(root, "dist");
 const checkOnly = process.argv.includes("--check");
 const today = process.env.BUILD_DATE || new Date().toISOString().slice(0, 10);
-const siteUrl = (process.env.SITE_URL || "https://example.github.io/rechtsradar").replace(/\/$/, "");
+const siteUrl = (process.env.SITE_URL || (process.env.VERCEL_PROJECT_PRODUCTION_URL && `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`) || "http://localhost:8080").replace(/\/$/, "");
 
 const SITE_NAME = "ERP-Rechtsradar";
 const DISCLAIMER = {

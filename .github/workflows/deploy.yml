@@ -1,25 +1,17 @@
-name: Validate & deploy
+name: Validate & daily rebuild
 
 on:
+  pull_request:
   push:
     branches: [main]
-  pull_request:
   schedule:
-    # Daily rebuild so computed statuses (planned → transition → live) flip on their dates
+    # Daily rebuild on Vercel so computed statuses in rules.json/rules.md flip on their dates
     - cron: "17 3 * * *"
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
 jobs:
-  build:
+  validate:
+    if: github.event_name != 'schedule'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -31,22 +23,14 @@ jobs:
       - name: Check links
         if: github.event_name == 'pull_request'
         run: node scripts/check-links.mjs
-      - name: Build
-        run: node scripts/build.mjs
-        env:
-          SITE_URL: ${{ vars.SITE_URL || format('https://{0}.github.io/{1}', github.repository_owner, github.event.repository.name) }}
-      - uses: actions/upload-pages-artifact@v3
-        if: github.event_name != 'pull_request'
-        with:
-          path: dist
 
-  deploy:
-    if: github.event_name != 'pull_request'
-    needs: build
+  rebuild:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Trigger Vercel deploy hook
+        run: |
+          if [ -z "$HOOK" ]; then echo "VERCEL_DEPLOY_HOOK secret not set, skipping"; exit 0; fi
+          curl -fsS -X POST "$HOOK"
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}

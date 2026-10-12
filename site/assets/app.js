@@ -1,4 +1,4 @@
-import { evaluateApplicability } from "./logic.js";
+import { computeStatus, evaluateApplicability } from "./logic.js";
 
 const UI = {
   de: {
@@ -310,7 +310,12 @@ async function init() {
   loadProfile();
   const res = await fetch("rules.json");
   data = await res.json();
-  data.rules.forEach((r) => (r._search = searchText(r)));
+  // Recompute status for today so the page is correct even between rebuilds
+  const today = new Date().toISOString().slice(0, 10);
+  data.rules.forEach((r) => {
+    r.status = computeStatus(r, today);
+    r._search = searchText(r);
+  });
   bind();
   update({ full: true });
   if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
