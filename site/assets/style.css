@@ -104,12 +104,12 @@ code { font-size: 0.85em; }
 .search:focus, .num-field input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 
 .filter-group { border: 0; margin: 0; padding: 0; min-width: 0; }
-.filter-group legend { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 8px; padding: 0; }
+.filter-group legend { font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 8px; padding: 0; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-.chip { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 999px; padding: 4px 11px; font: inherit; font-size: 0.84rem; cursor: pointer; }
+.chip { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 999px; padding: 3px 10px; font: inherit; font-size: 0.76rem; cursor: pointer; }
 .chip:hover { border-color: var(--accent); }
 .chip[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); font-weight: 600; }
-.status-chip::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+.status-chip::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 5px; vertical-align: 1px; }
 .status-chip.status-live::before { background: var(--green); }
 .status-chip.status-transition::before { background: var(--orange); }
 .status-chip.status-planned::before { background: var(--gray); }
