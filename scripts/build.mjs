@@ -105,7 +105,10 @@ if (checkOnly) process.exit(0);
 // ---------- build ----------
 const rules = data.rules
   .map((r) => ({ ...r, status: computeStatus(r, today) }))
-  .sort((a, b) => a.law.localeCompare(b.law, "de") || a.norm.localeCompare(b.norm, "de", { numeric: true }));
+  // Rules without a date first, then by validFrom, newest first
+  .sort((a, b) =>
+    (a.validFrom === null) !== (b.validFrom === null) ? (a.validFrom === null ? -1 : 1)
+    : (b.validFrom || "").localeCompare(a.validFrom || "") || a.law.localeCompare(b.law, "de") || a.norm.localeCompare(b.norm, "de", { numeric: true }));
 
 const meta = {
   name: SITE_NAME,
