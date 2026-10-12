@@ -1,0 +1,11 @@
+{
+  "name": "erp-rechtsradar",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/build.mjs --check",
+    "build": "node scripts/build.mjs",
+    "links": "node scripts/check-links.mjs",
+    "dev": "node scripts/build.mjs && python3 -m http.server 8080 -d dist"
+  }
+}

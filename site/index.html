@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ERP-Rechtsradar</title>
+  <meta name="description" content="Monatlich aktualisierte, KI-erstellte Übersicht der Gesetze und Regeln für CRM, E-Commerce, Buchhaltung, HR und ERP in Deutschland – filterbar für Unternehmer, maschinenlesbar für KI.">
+  <link rel="alternate" type="application/json" href="rules.json" title="Regeln als JSON">
+  <link rel="alternate" type="text/markdown" href="rules.md" title="Regeln als Markdown">
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="module" src="assets/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div>
+        <h1 class="brand">ERP-Rechtsradar</h1>
+        <p class="tagline" data-i18n="tagline"></p>
+      </div>
+      <nav class="header-nav">
+        <a href="rules.json">JSON</a>
+        <a href="rules.md">Markdown</a>
+        <a href="llms.txt">llms.txt</a>
+        <button type="button" id="lang-toggle" class="lang-toggle" aria-label="Sprache wechseln / switch language">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="disclaimer" role="note">
+    <div class="wrap"><strong data-i18n="disclaimerTitle"></strong> <span id="disclaimer-text"></span></div>
+  </div>
+
+  <main class="wrap">
+    <section class="controls" aria-label="Filter">
+      <div class="search-row">
+        <input type="search" id="search" autocomplete="off">
+        <button type="button" id="reset" class="link-btn" data-i18n="reset"></button>
+      </div>
+
+      <fieldset class="filter-group">
+        <legend data-i18n="categories"></legend>
+        <div class="chips" id="cat-chips"></div>
+      </fieldset>
+
+      <div class="filter-split">
+        <fieldset class="filter-group">
+          <legend data-i18n="status"></legend>
+          <div class="chips" id="status-chips"></div>
+        </fieldset>
+        <fieldset class="filter-group">
+          <legend data-i18n="jurisdiction"></legend>
+          <div class="chips" id="jur-chips"></div>
+        </fieldset>
+      </div>
+
+      <details class="profile" id="profile">
+        <summary><span data-i18n="profileTitle"></span> <span class="profile-hint" data-i18n="profileHint"></span></summary>
+        <div class="profile-body">
+          <div class="profile-numbers" id="profile-numbers"></div>
+          <fieldset class="filter-group">
+            <legend data-i18n="businessModel"></legend>
+            <div class="checks" id="profile-models"></div>
+          </fieldset>
+          <fieldset class="filter-group">
+            <legend data-i18n="activities"></legend>
+            <div class="checks checks-grid" id="profile-activities"></div>
+          </fieldset>
+          <label class="toggle"><input type="checkbox" id="only-relevant"> <span data-i18n="onlyRelevant"></span></label>
+          <p class="fine" data-i18n="profileNote"></p>
+        </div>
+      </details>
+    </section>
+
+    <p class="result-count" id="count" aria-live="polite"></p>
+    <ol class="rules" id="rules"></ol>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p id="footer-disclaimer"></p>
+      <p id="footer-meta"></p>
+      <p><a href="impressum.html" data-i18n="imprint"></a> · <a href="datenschutz.html" data-i18n="privacy"></a> · <a href="schema.json">Schema</a></p>
+    </div>
+  </footer>
+</body>
+</html>

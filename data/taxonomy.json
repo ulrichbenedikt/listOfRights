@@ -1,0 +1,47 @@
+{
+  "categories": {
+    "crm-datenschutz": { "de": "CRM & Datenschutz", "en": "CRM & data protection" },
+    "e-commerce": { "de": "E-Commerce", "en": "E-commerce" },
+    "buchhaltung-steuern": { "de": "Buchhaltung & Steuern", "en": "Accounting & tax" },
+    "rechnungsstellung": { "de": "Rechnungsstellung", "en": "Invoicing" },
+    "hr": { "de": "Personal / HR", "en": "HR & payroll" },
+    "warenwirtschaft-produkt": { "de": "Warenwirtschaft & Produkt", "en": "Inventory & products" },
+    "it-sicherheit": { "de": "IT-Sicherheit", "en": "IT security" },
+    "ki": { "de": "Künstliche Intelligenz", "en": "Artificial intelligence" },
+    "barrierefreiheit": { "de": "Barrierefreiheit", "en": "Accessibility" }
+  },
+  "activities": {
+    "personal-data": { "de": "Verarbeitet personenbezogene Daten (Kunden, Leads, Mitarbeitende)", "en": "Processes personal data (customers, leads, staff)" },
+    "website": { "de": "Betreibt Website oder App", "en": "Operates a website or app" },
+    "online-sales": { "de": "Verkauft online (Fernabsatz)", "en": "Sells online (distance contracts)" },
+    "subscriptions": { "de": "Bietet Abos / Dauerverträge online an", "en": "Offers subscriptions / ongoing contracts online" },
+    "marketing": { "de": "Macht E-Mail-, Telefon- oder SMS-Marketing", "en": "Does e-mail, phone or SMS marketing" },
+    "invoicing": { "de": "Stellt Rechnungen aus", "en": "Issues invoices" },
+    "bookkeeping": { "de": "Führt Bücher / Buchhaltung", "en": "Keeps books / accounting" },
+    "cash-register": { "de": "Nutzt elektronische Kasse", "en": "Uses an electronic cash register" },
+    "employees": { "de": "Hat Beschäftigte", "en": "Has employees" },
+    "physical-products": { "de": "Verkauft physische Produkte", "en": "Sells physical products" },
+    "packaging": { "de": "Versendet / vertreibt verpackte Ware", "en": "Ships or distributes packaged goods" },
+    "electronics": { "de": "Verkauft Elektro- oder Elektronikgeräte", "en": "Sells electrical or electronic equipment" },
+    "platform": { "de": "Betreibt Plattform, Marktplatz oder Hosting", "en": "Operates a platform, marketplace or hosting" },
+    "ai": { "de": "Entwickelt oder nutzt KI-Systeme", "en": "Develops or uses AI systems" },
+    "connected-products": { "de": "Bietet vernetzte Produkte oder Cloud-Dienste an", "en": "Offers connected products or cloud services" },
+    "critical-sector": { "de": "Ist in einem NIS2-Sektor tätig (z. B. Energie, Transport, digitale Dienste, Produktion)", "en": "Operates in a NIS2 sector (e.g. energy, transport, digital services, manufacturing)" },
+    "cash-trading": { "de": "Handelt mit Gütern gegen Bargeld ab 10.000 €", "en": "Trades goods for cash of €10,000 or more" }
+  },
+  "businessModels": {
+    "b2b": { "de": "B2B", "en": "B2B" },
+    "b2c": { "de": "B2C", "en": "B2C" }
+  },
+  "metrics": {
+    "employees": { "de": "Mitarbeitende", "en": "Employees" },
+    "revenue": { "de": "Jahresumsatz (€)", "en": "Annual revenue (€)" },
+    "balanceSheet": { "de": "Bilanzsumme (€)", "en": "Balance sheet total (€)" },
+    "profit": { "de": "Jahresgewinn (€)", "en": "Annual profit (€)" }
+  },
+  "statuses": {
+    "live": { "de": "In Kraft", "en": "In force", "color": "green" },
+    "transition": { "de": "Übergangsphase", "en": "Transition period", "color": "orange" },
+    "planned": { "de": "In Planung", "en": "Planned", "color": "gray" }
+  }
+}
