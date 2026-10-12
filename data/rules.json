@@ -2351,6 +2351,1856 @@
         "https://www.aiacto.eu/en/blog/digital-omnibus-ai-act-report-2027"
       ],
       "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "eu-cra",
+      "law": "Cyber Resilience Act",
+      "norm": "VO (EU) 2024/2847, Art. 13, 14",
+      "title": {
+        "de": "Cybersicherheit für Produkte mit digitalen Elementen",
+        "en": "Cybersecurity for products with digital elements"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj/deu",
+      "urlEn": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng",
+      "jurisdiction": "EU",
+      "categories": [
+        "it-sicherheit",
+        "warenwirtschaft-produkt"
+      ],
+      "summary": {
+        "de": "Hersteller von Hard- und Software, die in der EU in Verkehr gebracht wird, müssen Security by Design umsetzen, Schwachstellen über den Supportzeitraum beheben und Sicherheitsupdates liefern. Seit 11.09.2026 sind aktiv ausgenutzte Schwachstellen und schwere Sicherheitsvorfälle zu melden (Frühwarnung 24 h, Meldung 72 h). Ab 11.12.2027 gelten alle Pflichten inkl. Konformitätsbewertung und CE-Kennzeichnung. Reine SaaS fällt grundsätzlich unter NIS2 statt CRA, außer als Fernverarbeitung eines Produkts.",
+        "en": "Manufacturers of hardware and software placed on the EU market must implement security by design, fix vulnerabilities during the support period and deliver security updates. Since 11 Sep 2026 actively exploited vulnerabilities and severe incidents must be reported (early warning 24h, notification 72h). From 11 Dec 2027 all obligations apply incl. conformity assessment and CE marking. Pure SaaS generally falls under NIS2 rather than the CRA, unless it is remote data processing of a product."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Software-Stückliste (SBOM) pflegen",
+          "Prozess zur Schwachstellenbehandlung und koordinierten Offenlegung (security.txt, Kontakt)",
+          "Meldeprozess 24 h / 72 h an ENISA bzw. CSIRT",
+          "Sichere Voreinstellungen, automatische Sicherheitsupdates, definierter Supportzeitraum"
+        ],
+        "en": [
+          "Maintain a software bill of materials (SBOM)",
+          "Vulnerability handling and coordinated disclosure process (security.txt, contact)",
+          "24h / 72h reporting process to ENISA/CSIRT",
+          "Secure defaults, automatic security updates, defined support period"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Hersteller, Importeure und Händler von Software und Geräten mit digitalen Elementen.",
+          "en": "Manufacturers, importers and distributors of software and devices with digital elements."
+        },
+        "activities": [
+          "software-products",
+          "connected-products"
+        ]
+      },
+      "validFrom": "2024-12-10",
+      "transitionUntil": "2027-12-11",
+      "milestones": [
+        {
+          "date": "2026-09-11",
+          "label": {
+            "de": "Meldepflichten für Schwachstellen & Vorfälle",
+            "en": "Reporting obligations for vulnerabilities & incidents"
+          }
+        },
+        {
+          "date": "2027-12-11",
+          "label": {
+            "de": "Alle Pflichten inkl. CE-Kennzeichnung",
+            "en": "All obligations incl. CE marking"
+          }
+        }
+      ],
+      "sources": [
+        "https://eur-lex.europa.eu/eli/reg/2024/2847/oj/deu",
+        "https://www.it-daily.net/it-sicherheit/cloud-security/cyber-resilience-act-bis-september"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "eu-produkthaftung",
+      "law": "ProdHaftG (neu)",
+      "norm": "RL (EU) 2024/2853",
+      "title": {
+        "de": "Neue Produkthaftung – auch für Software & KI",
+        "en": "New product liability – including software & AI"
+      },
+      "url": "https://eur-lex.europa.eu/eli/dir/2024/2853/oj/deu",
+      "urlEn": "https://eur-lex.europa.eu/eli/dir/2024/2853/oj/eng",
+      "jurisdiction": "EU",
+      "categories": [
+        "it-sicherheit",
+        "ki",
+        "warenwirtschaft-produkt"
+      ],
+      "summary": {
+        "de": "Software (installiert, Cloud, Firmware, KI-Systeme) gilt künftig ausdrücklich als Produkt. Hersteller haften verschuldensunabhängig für Schäden durch fehlerhafte Produkte – auch durch fehlende Sicherheitsupdates. Gilt für Produkte, die ab 09.12.2026 in Verkehr gebracht werden. Das deutsche Umsetzungsgesetz (BT-Drs. 21/4297) ist im Bundestag, aber noch nicht verabschiedet. Ausnahme: Open-Source-Software außerhalb einer Geschäftstätigkeit.",
+        "en": "Software (installed, cloud, firmware, AI systems) is expressly treated as a product. Manufacturers are strictly liable for damage caused by defective products – including missing security updates. Applies to products placed on the market from 9 Dec 2026. The German implementing act (BT-Drs. 21/4297) is in the Bundestag but not yet passed. Exception: open-source software outside a commercial activity."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Update- und Patch-Historie nachweisbar dokumentieren",
+          "Sicherheitsupdates über den gesamten Kontrollzeitraum bereitstellen",
+          "Technische Dokumentation für Beweislast-Fälle vorhalten"
+        ],
+        "en": [
+          "Document update and patch history verifiably",
+          "Provide security updates throughout the period of control",
+          "Keep technical documentation for burden-of-proof cases"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Hersteller von Produkten inkl. Software, Importeure, Bevollmächtigte und ggf. Fulfillment-Dienstleister.",
+          "en": "Manufacturers of products incl. software, importers, authorised representatives and possibly fulfilment providers."
+        },
+        "activities": [
+          "software-products",
+          "physical-products",
+          "imports"
+        ]
+      },
+      "validFrom": "2026-12-09",
+      "stage": {
+        "de": "Regierungsentwurf im Bundestag (Drs. 21/4297)",
+        "en": "Government bill in the Bundestag (Drs. 21/4297)"
+      },
+      "sources": [
+        "https://eur-lex.europa.eu/eli/dir/2024/2853/oj/deu",
+        "https://dserver.bundestag.de/btd/21/042/2104297.pdf"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-bgb-327",
+      "law": "BGB",
+      "norm": "§§ 327–327u",
+      "title": {
+        "de": "Verträge über digitale Produkte & Aktualisierungspflicht",
+        "en": "Contracts for digital products & update obligation"
+      },
+      "url": "https://www.gesetze-im-internet.de/bgb/__327.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "e-commerce",
+        "it-sicherheit"
+      ],
+      "summary": {
+        "de": "Wer Verbrauchern digitale Inhalte oder Dienstleistungen bereitstellt (Software, SaaS, Apps, E-Books, Streaming – auch gegen Daten statt Geld), muss Mängelfreiheit gewährleisten und für einen angemessenen Zeitraum Aktualisierungen inkl. Sicherheitsupdates bereitstellen (§ 327f). Bei Paketen und Waren mit digitalen Elementen gelten ergänzend §§ 475b ff.",
+        "en": "Anyone supplying consumers with digital content or services (software, SaaS, apps, e-books, streaming – also in exchange for data) must ensure conformity and provide updates including security updates for a reasonable period (§ 327f). Goods with digital elements are additionally covered by §§ 475b ff."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Update-Mechanismus und Information über verfügbare Updates",
+          "Supportzeitraum festlegen und kommunizieren",
+          "Datenexport nach Vertragsende ermöglichen (§ 327p)"
+        ],
+        "en": [
+          "Update mechanism and information about available updates",
+          "Define and communicate support period",
+          "Allow data export after contract ends (§ 327p)"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Anbieter digitaler Produkte gegenüber Verbrauchern.",
+          "en": "Providers of digital products to consumers."
+        },
+        "businessModels": [
+          "b2c"
+        ],
+        "activities": [
+          "software-products",
+          "subscriptions"
+        ]
+      },
+      "validFrom": "2022-01-01",
+      "sources": [
+        "https://www.gesetze-im-internet.de/bgb/__327f.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-uwg-greenwashing",
+      "law": "UWG",
+      "norm": "§ 5 Abs. 2, 3, § 5b Abs. 3a, Anhang zu § 3 Abs. 3",
+      "title": {
+        "de": "Umweltaussagen & Greenwashing-Verbot",
+        "en": "Environmental claims & greenwashing ban"
+      },
+      "url": "https://www.gesetze-im-internet.de/uwg_2004/__5.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "e-commerce",
+        "warenwirtschaft-produkt"
+      ],
+      "summary": {
+        "de": "Seit 27.09.2026 (Umsetzung der RL (EU) 2024/825): Allgemeine Umweltaussagen („umweltfreundlich“, „grün“) ohne anerkannte hervorragende Umweltleistung sind unzulässig, ebenso „klimaneutral“ auf Basis von Kompensation und Nachhaltigkeitssiegel ohne Zertifizierungssystem oder staatliche Festlegung. Zukunftsaussagen brauchen einen überprüfbaren Umsetzungsplan. Gilt gegenüber Verbrauchern.",
+        "en": "Since 27 Sep 2026 (implementing Directive (EU) 2024/825): generic environmental claims ('eco-friendly', 'green') without recognised excellent environmental performance are prohibited, as are 'climate neutral' claims based on offsetting and sustainability labels without a certification scheme or public authority. Future claims require a verifiable implementation plan. Applies towards consumers."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Umweltaussagen und Siegel je Produkt mit Nachweis/Zertifikat im PIM verwalten",
+          "Freigabeprozess für Marketingtexte mit Umweltbezug"
+        ],
+        "en": [
+          "Manage environmental claims and labels per product with proof/certificate in PIM",
+          "Approval workflow for marketing copy with environmental claims"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Unternehmen, die gegenüber Verbrauchern mit Umwelt- oder Nachhaltigkeitsaussagen werben.",
+          "en": "Businesses making environmental or sustainability claims to consumers."
+        },
+        "businessModels": [
+          "b2c"
+        ]
+      },
+      "validFrom": "2026-09-27",
+      "sources": [
+        "https://www.ihk.de/schwerin/recht/wirtschaftsrecht/wettbewerbsrecht/greenwashing-6984696",
+        "https://eur-lex.europa.eu/eli/dir/2024/825/oj/deu"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-betrvg-87",
+      "law": "BetrVG",
+      "norm": "§ 87 Abs. 1 Nr. 6",
+      "title": {
+        "de": "Mitbestimmung bei technischen Überwachungseinrichtungen",
+        "en": "Co-determination on technical monitoring systems"
+      },
+      "url": "https://www.gesetze-im-internet.de/betrvg/__87.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "hr",
+        "crm-datenschutz",
+        "ki"
+      ],
+      "summary": {
+        "de": "Die Einführung und Anwendung technischer Einrichtungen, die objektiv geeignet sind, Verhalten oder Leistung von Beschäftigten zu überwachen, bedarf der Zustimmung des Betriebsrats. Nach BAG-Rechtsprechung genügt die bloße Eignung – das trifft auf praktisch jede Software mit Nutzer-Logs zu (CRM, ERP, Ticketsysteme, MS 365, KI-Tools). In der Praxis: Betriebsvereinbarung vor Einführung.",
+        "en": "Introducing and using technical systems objectively capable of monitoring employees' conduct or performance requires works council consent. Under Federal Labour Court case law mere capability suffices – this applies to practically all software with user logs (CRM, ERP, ticketing, MS 365, AI tools). In practice: works agreement before rollout."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Konfigurierbare Protokollierung und Auswertungen (abschaltbar, pseudonymisierbar)",
+          "Dokumentation, welche Mitarbeiterdaten erfasst und ausgewertet werden (für Betriebsvereinbarung)",
+          "Rollenkonzept: keine Leistungsauswertung ohne Freigabe"
+        ],
+        "en": [
+          "Configurable logging and reports (can be disabled, pseudonymised)",
+          "Documentation of which employee data is collected and evaluated (for works agreement)",
+          "Role model: no performance reports without approval"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Arbeitgeber mit Betriebsrat (Betriebsrat ab 5 Beschäftigten möglich).",
+          "en": "Employers with a works council (possible from 5 employees)."
+        },
+        "activities": [
+          "works-council"
+        ]
+      },
+      "validFrom": "1972-01-19",
+      "sources": [
+        "https://www.gesetze-im-internet.de/betrvg/__87.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "eu-dsgvo-art13-14",
+      "law": "DSGVO",
+      "norm": "Art. 13, 14",
+      "title": {
+        "de": "Informationspflichten (Datenschutzerklärung)",
+        "en": "Information duties (privacy notice)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "urlEn": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+      "jurisdiction": "EU",
+      "categories": [
+        "crm-datenschutz",
+        "e-commerce",
+        "hr"
+      ],
+      "summary": {
+        "de": "Bei der Erhebung personenbezogener Daten müssen Betroffene informiert werden: Verantwortlicher, Zwecke, Rechtsgrundlagen, Empfänger, Drittlandtransfers, Speicherdauer, Rechte. Bei Daten aus Dritt-Quellen (z. B. Lead-Kauf, Enrichment, Scraping) spätestens innerhalb eines Monats (Art. 14).",
+        "en": "When collecting personal data, data subjects must be informed of: controller, purposes, legal bases, recipients, third-country transfers, retention period, rights. For data from third-party sources (e.g. bought leads, enrichment, scraping) within one month at the latest (Art. 14)."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Datenschutzhinweise an jedem Erhebungspunkt verlinken (Formulare, Checkout, Bewerbung)",
+          "Herkunft (Quelle) je Kontakt speichern, um Art.-14-Information auszulösen",
+          "Version der Datenschutzerklärung zum Zeitpunkt der Erhebung protokollieren"
+        ],
+        "en": [
+          "Link privacy notice at every collection point (forms, checkout, application)",
+          "Store source per contact to trigger Art. 14 notice",
+          "Log privacy notice version at time of collection"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Alle Verantwortlichen, die personenbezogene Daten erheben.",
+          "en": "All controllers collecting personal data."
+        },
+        "activities": [
+          "personal-data"
+        ]
+      },
+      "validFrom": "2018-05-25",
+      "sources": [
+        "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "eu-dsgvo-art22",
+      "law": "DSGVO",
+      "norm": "Art. 22",
+      "title": {
+        "de": "Automatisierte Einzelentscheidungen & Scoring",
+        "en": "Automated decisions & scoring"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "urlEn": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+      "jurisdiction": "EU",
+      "categories": [
+        "crm-datenschutz",
+        "ki",
+        "hr"
+      ],
+      "summary": {
+        "de": "Entscheidungen mit rechtlicher oder ähnlich erheblicher Wirkung dürfen grundsätzlich nicht ausschließlich automatisiert getroffen werden (z. B. Ablehnung von Kauf auf Rechnung, Bewerber-Aussortierung, Kreditlimits). Nach EuGH (C-634/21, SCHUFA) kann schon ein maßgeblicher Score eine solche Entscheidung sein. Ausnahmen nur mit Vertrag, Gesetz oder Einwilligung plus Recht auf menschliches Eingreifen.",
+        "en": "Decisions with legal or similarly significant effects must generally not be based solely on automated processing (e.g. rejecting invoice payment, filtering out applicants, credit limits). Per CJEU (C-634/21, SCHUFA) a decisive score can already constitute such a decision. Exceptions only with contract, law or consent plus right to human intervention."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Menschliche Überprüfung (Human in the Loop) für automatisierte Ablehnungen",
+          "Begründung bzw. Logik der Entscheidung erklärbar machen",
+          "Möglichkeit zur Anfechtung und Stellungnahme im Prozess"
+        ],
+        "en": [
+          "Human review (human in the loop) for automated rejections",
+          "Make the decision logic explainable",
+          "Option to contest and express a view in the process"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Unternehmen, die Scoring, Bonitätsprüfung oder automatisierte Auswahl einsetzen.",
+          "en": "Businesses using scoring, credit checks or automated selection."
+        },
+        "activities": [
+          "ai",
+          "consumer-credit",
+          "employees"
+        ]
+      },
+      "validFrom": "2018-05-25",
+      "sources": [
+        "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+        "https://curia.europa.eu/juris/liste.jsf?num=C-634/21"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "eu-dsgvo-art35",
+      "law": "DSGVO",
+      "norm": "Art. 35",
+      "title": {
+        "de": "Datenschutz-Folgenabschätzung (DSFA)",
+        "en": "Data protection impact assessment (DPIA)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+      "urlEn": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+      "jurisdiction": "EU",
+      "categories": [
+        "crm-datenschutz",
+        "ki",
+        "hr"
+      ],
+      "summary": {
+        "de": "Bei voraussichtlich hohem Risiko ist vorab eine DSFA durchzuführen, z. B. bei umfangreichem Profiling, systematischer Überwachung von Beschäftigten, Einsatz neuer Technologien wie KI mit Personenbezug. Die Aufsichtsbehörden (DSK) führen eine Muss-Liste.",
+        "en": "A DPIA must be carried out in advance where high risk is likely, e.g. extensive profiling, systematic monitoring of employees, use of new technologies such as AI with personal data. German supervisory authorities (DSK) publish a mandatory list."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Risiko-relevante Verarbeitungen (Profiling, KI, Tracking) dokumentieren, damit Kunden DSFA erstellen können"
+        ],
+        "en": [
+          "Document risk-relevant processing (profiling, AI, tracking) so customers can perform DPIAs"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Verantwortliche mit risikoreichen Verarbeitungen (Profiling, KI, Mitarbeiterüberwachung).",
+          "en": "Controllers with high-risk processing (profiling, AI, employee monitoring)."
+        },
+        "activities": [
+          "personal-data",
+          "ai"
+        ]
+      },
+      "validFrom": "2018-05-25",
+      "sources": [
+        "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+        "https://www.datenschutzkonferenz-online.de/media/ah/20181017_ah_DSK_DSFA_Muss-Liste_Version_1.1_Deutsch.pdf"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-bgb-286",
+      "law": "BGB",
+      "norm": "§§ 286, 288",
+      "title": {
+        "de": "Zahlungsverzug, Verzugszinsen & 40-€-Pauschale",
+        "en": "Late payment, default interest & €40 flat fee"
+      },
+      "url": "https://www.gesetze-im-internet.de/bgb/__286.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "rechnungsstellung",
+        "buchhaltung-steuern"
+      ],
+      "summary": {
+        "de": "Schuldner kommen spätestens 30 Tage nach Fälligkeit und Rechnungszugang in Verzug (gegenüber Verbrauchern nur, wenn auf der Rechnung darauf hingewiesen wurde). Verzugszinsen: 5 Prozentpunkte über Basiszins (Verbraucher) bzw. 9 Prozentpunkte (B2B). Im B2B-Verzug zusätzlich 40 € Pauschale. Zahlungsfristen über 60 Tage im B2B nur eingeschränkt zulässig (§ 271a).",
+        "en": "Debtors are in default no later than 30 days after due date and receipt of invoice (for consumers only if the invoice states this). Default interest: 5 percentage points above base rate (consumers) or 9 points (B2B). B2B default additionally triggers a €40 flat fee. Payment terms beyond 60 days B2B only allowed in limited cases (§ 271a)."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Basiszinssatz halbjährlich (01.01./01.07.) als datierte Stammdaten pflegen",
+          "Verzugszinsen je nach B2B/B2C korrekt berechnen",
+          "30-Tage-Hinweis auf Verbraucherrechnungen",
+          "40-€-Pauschale nur bei B2B im Mahnwesen"
+        ],
+        "en": [
+          "Maintain base rate semi-annually (1 Jan/1 Jul) as dated master data",
+          "Calculate default interest correctly for B2B/B2C",
+          "30-day notice on consumer invoices",
+          "€40 flat fee only for B2B in dunning"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Alle Unternehmen mit Forderungen und Mahnwesen.",
+          "en": "All businesses with receivables and dunning."
+        },
+        "activities": [
+          "invoicing"
+        ]
+      },
+      "validFrom": "2002-01-01",
+      "sources": [
+        "https://www.gesetze-im-internet.de/bgb/__286.html",
+        "https://www.gesetze-im-internet.de/bgb/__288.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-bgb-305",
+      "law": "BGB",
+      "norm": "§§ 305–310",
+      "title": {
+        "de": "AGB-Recht: Einbeziehung & Inhaltskontrolle",
+        "en": "Standard terms: incorporation & content review"
+      },
+      "url": "https://www.gesetze-im-internet.de/bgb/__305.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "e-commerce",
+        "crm-datenschutz"
+      ],
+      "summary": {
+        "de": "AGB werden gegenüber Verbrauchern nur Vertragsbestandteil, wenn vor Vertragsschluss ausdrücklich darauf hingewiesen wird und zumutbare Kenntnisnahme möglich ist. Überraschende oder unangemessen benachteiligende Klauseln sind unwirksam; im B2C gelten die Klauselverbote der §§ 308, 309 (z. B. Laufzeit, Kündigungsfristen, Haftungsausschlüsse).",
+        "en": "Standard terms only become part of consumer contracts if expressly referred to before conclusion and reasonably accessible. Surprising or unreasonably disadvantageous clauses are void; for B2C the clause prohibitions of §§ 308, 309 apply (e.g. term, notice periods, liability exclusions)."
+      },
+      "softwareRequirements": {
+        "de": [
+          "AGB-Hinweis und Link vor dem Bestellbutton",
+          "Akzeptierte AGB-Version je Vertrag speichern",
+          "Laufzeiten/Kündigungsfristen im B2C gemäß § 309 Nr. 9 begrenzen (max. 2 Jahre Erstlaufzeit, danach monatlich kündbar)"
+        ],
+        "en": [
+          "Terms notice and link before the order button",
+          "Store accepted terms version per contract",
+          "Limit B2C terms/notice per § 309 no. 9 (max. 2-year initial term, then cancellable monthly)"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Alle Unternehmen, die AGB verwenden.",
+          "en": "All businesses using standard terms."
+        },
+        "activities": [
+          "online-sales",
+          "subscriptions"
+        ]
+      },
+      "validFrom": "2002-01-01",
+      "sources": [
+        "https://www.gesetze-im-internet.de/bgb/__305.html",
+        "https://www.gesetze-im-internet.de/bgb/__309.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-zag-sca",
+      "law": "ZAG / PSD2",
+      "norm": "§ 55 ZAG, VO (EU) 2018/389",
+      "title": {
+        "de": "Starke Kundenauthentifizierung bei Online-Zahlungen",
+        "en": "Strong customer authentication for online payments"
+      },
+      "url": "https://www.gesetze-im-internet.de/zag_2018/__55.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "e-commerce"
+      ],
+      "summary": {
+        "de": "Elektronische Zahlungen erfordern grundsätzlich eine Zwei-Faktor-Authentifizierung (z. B. 3-D Secure 2). Ausnahmen u. a. für Kleinbeträge, wiederkehrende Zahlungen und händlerinitiierte Transaktionen. Die Nachfolgeregelung (PSD3/Zahlungsdiensteverordnung PSR) ist politisch geeinigt und soll voraussichtlich ab Ende 2027 gelten (u. a. IBAN-Namensabgleich, neue Betrugshaftung).",
+        "en": "Electronic payments generally require two-factor authentication (e.g. 3-D Secure 2). Exemptions include low-value, recurring and merchant-initiated transactions. The successor rules (PSD3/Payment Services Regulation PSR) are politically agreed and expected to apply from around end of 2027 (incl. IBAN name check, new fraud liability)."
+      },
+      "softwareRequirements": {
+        "de": [
+          "3-D Secure 2 im Checkout über den Payment-Provider",
+          "Abos/Wiederholungszahlungen als händlerinitiierte Transaktionen (MIT) korrekt kennzeichnen"
+        ],
+        "en": [
+          "3-D Secure 2 in checkout via payment provider",
+          "Flag subscriptions/recurring payments correctly as merchant-initiated transactions (MIT)"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Online-Händler mit Karten- oder Online-Zahlungen.",
+          "en": "Online merchants with card or online payments."
+        },
+        "activities": [
+          "online-sales"
+        ]
+      },
+      "validFrom": "2019-09-14",
+      "sources": [
+        "https://www.gesetze-im-internet.de/zag_2018/__55.html",
+        "https://banking.vision/payment-services-directive-3-regulation/"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-verbraucherkredit",
+      "law": "BGB (Verbraucherkredit)",
+      "norm": "§§ 491 ff. n. F., RL (EU) 2023/2225",
+      "title": {
+        "de": "Neues Verbraucherkreditrecht (u. a. Ratenkauf, Buy now pay later)",
+        "en": "New consumer credit law (incl. instalments, buy now pay later)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/dir/2023/2225/oj/deu",
+      "jurisdiction": "DE",
+      "categories": [
+        "e-commerce",
+        "rechnungsstellung"
+      ],
+      "summary": {
+        "de": "Ab 20.11.2026: Der Anwendungsbereich wird auf kleine, kurzfristige und zinsfreie Kredite ausgeweitet; damit können auch BNPL- und Ratenzahlungsangebote erfasst sein. Strengere Kreditwürdigkeitsprüfung, Textform statt Schriftform, Verbot vorausgewählter Optionen, Warnhinweis in der Kreditwerbung, Erlaubnispflicht für Kreditvermittler (§ 34k GewO). Für Verträge vor dem 20.11.2026 gilt altes Recht.",
+        "en": "From 20 Nov 2026: scope extended to small, short-term and interest-free credit, which may cover BNPL and instalment offers. Stricter creditworthiness checks, text form instead of written form, ban on pre-ticked options, cost warning in credit advertising, licensing for credit intermediaries (§ 34k GewO). Contracts concluded before 20 Nov 2026 remain under old law."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Keine vorausgewählten Kredit- oder Versicherungsoptionen im Checkout",
+          "Pflichtinformationen und Warnhinweis bei Finanzierungsangeboten anzeigen",
+          "Klären, ob der BNPL-Anbieter oder der Händler Kreditgeber/Vermittler ist"
+        ],
+        "en": [
+          "No pre-selected credit or insurance options in checkout",
+          "Show mandatory information and warning for financing offers",
+          "Clarify whether the BNPL provider or the merchant is lender/intermediary"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Händler, die Verbrauchern Finanzierung, Ratenzahlung oder Zahlungsaufschub anbieten oder vermitteln.",
+          "en": "Merchants offering or brokering financing, instalments or deferred payment to consumers."
+        },
+        "businessModels": [
+          "b2c"
+        ],
+        "activities": [
+          "consumer-credit"
+        ]
+      },
+      "validFrom": "2026-11-20",
+      "sources": [
+        "https://www.noerr.com/de/insights/gesetz-zur-umsetzung-der-verbraucherkreditrichtlinie-2023-beschlossen",
+        "https://www.bundestag.de/dokumente/textarchiv/2026/kw16-de-verbraucherkreditvertraege-1158224"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-vsbg-36",
+      "law": "VSBG",
+      "norm": "§ 36",
+      "title": {
+        "de": "Hinweis zur Verbraucherschlichtung",
+        "en": "Consumer dispute resolution notice"
+      },
+      "url": "https://www.gesetze-im-internet.de/vsbg/__36.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "e-commerce"
+      ],
+      "summary": {
+        "de": "Unternehmen mit Website oder AGB müssen Verbraucher informieren, ob sie zur Teilnahme an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle bereit oder verpflichtet sind. Ausgenommen von dieser Erklärung: wer am 31.12. des Vorjahres 10 oder weniger Personen beschäftigt hat. Der frühere Link zur EU-OS-Plattform ist seit 20.07.2025 entfallen und muss entfernt werden.",
+        "en": "Businesses with a website or standard terms must inform consumers whether they are willing or obliged to take part in proceedings before a consumer arbitration body. Exempt from this statement: those with 10 or fewer employees on 31 Dec of the previous year. The former link to the EU ODR platform was abolished on 20 Jul 2025 and must be removed."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Schlichtungs-Hinweis in Impressum/AGB pflegbar",
+          "Veralteten OS-Plattform-Link entfernen"
+        ],
+        "en": [
+          "Arbitration notice maintainable in legal notice/terms",
+          "Remove outdated ODR platform link"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "B2C-Unternehmen mit Website oder AGB und mehr als 10 Beschäftigten.",
+          "en": "B2C businesses with website or terms and more than 10 employees."
+        },
+        "businessModels": [
+          "b2c"
+        ],
+        "activities": [
+          "website"
+        ],
+        "exemptions": [
+          {
+            "conditions": [
+              {
+                "metric": "employees",
+                "max": 10
+              }
+            ],
+            "text": {
+              "de": "Bis 10 Beschäftigte (Stichtag 31.12. Vorjahr)",
+              "en": "Up to 10 employees (as of 31 Dec prior year)"
+            }
+          }
+        ]
+      },
+      "validFrom": "2016-02-01",
+      "sources": [
+        "https://www.gesetze-im-internet.de/vsbg/__36.html",
+        "https://www.ihk.de/karlsruhe/fachthemen/recht/internetrecht/fallback1433495812828/online-streitbeilegungsplattform-6426580"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "eu-p2b",
+      "law": "P2B-VO",
+      "norm": "VO (EU) 2019/1150",
+      "title": {
+        "de": "Fairness für gewerbliche Nutzer von Plattformen",
+        "en": "Fairness for business users of platforms"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2019/1150/oj/deu",
+      "urlEn": "https://eur-lex.europa.eu/eli/reg/2019/1150/oj/eng",
+      "jurisdiction": "EU",
+      "categories": [
+        "e-commerce"
+      ],
+      "summary": {
+        "de": "Online-Marktplätze, App-Stores, Preisvergleichs- und Buchungsportale müssen gegenüber gewerblichen Nutzern transparente AGB (Änderungen mit 15 Tagen Vorlauf), begründete Sperrungen, Offenlegung der Ranking-Parameter und ein internes Beschwerdemanagement bieten. Kleine Unternehmen sind vom Beschwerdesystem ausgenommen.",
+        "en": "Online marketplaces, app stores, price comparison and booking portals must provide business users with transparent terms (15 days' notice of changes), reasoned suspensions, disclosure of ranking parameters and an internal complaint-handling system. Small enterprises are exempt from the complaint system."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Ranking-Kriterien dokumentieren und offenlegen",
+          "Begründete Sperrung/Kündigung von Händlerkonten mit Fristen",
+          "Beschwerdesystem für Händler"
+        ],
+        "en": [
+          "Document and disclose ranking criteria",
+          "Reasoned suspension/termination of seller accounts with notice periods",
+          "Complaint system for sellers"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Betreiber von Plattformen mit gewerblichen Anbietern.",
+          "en": "Operators of platforms with business sellers."
+        },
+        "activities": [
+          "platform"
+        ]
+      },
+      "validFrom": "2020-07-12",
+      "sources": [
+        "https://eur-lex.europa.eu/eli/reg/2019/1150/oj/deu"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-recht-auf-reparatur",
+      "law": "BGB (Reparatur)",
+      "norm": "Umsetzung RL (EU) 2024/1799 (BGBl. 2026 I Nr. 212)",
+      "title": {
+        "de": "Recht auf Reparatur",
+        "en": "Right to repair"
+      },
+      "url": "https://eur-lex.europa.eu/eli/dir/2024/1799/oj/deu",
+      "urlEn": "https://eur-lex.europa.eu/eli/dir/2024/1799/oj/eng",
+      "jurisdiction": "DE",
+      "categories": [
+        "e-commerce",
+        "warenwirtschaft-produkt"
+      ],
+      "summary": {
+        "de": "Seit 23.07.2026: Hersteller bestimmter Produktgruppen (Anhang II der Richtlinie, z. B. Smartphones, Tablets, Waschmaschinen, Kühlschränke, Staubsauger) müssen auch nach Ablauf der Gewährleistung zu angemessenem Preis reparieren. Wählt der Verbraucher bei einem Mangel die Reparatur, verlängert sich die Gewährleistung um 12 Monate. Reparaturinformationen (Europäisches Reparaturformular) und Ersatzteile müssen verfügbar sein.",
+        "en": "Since 23 Jul 2026: manufacturers of certain product groups (Annex II of the directive, e.g. smartphones, tablets, washing machines, fridges, vacuum cleaners) must repair at a reasonable price even after the warranty period. If the consumer chooses repair for a defect, the warranty is extended by 12 months. Repair information (European Repair Information Form) and spare parts must be available."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Gewährleistungsfrist bei Reparatur automatisch um 12 Monate verlängern",
+          "Reparaturauftrag, Ersatzteil- und Preisinformationen verwalten"
+        ],
+        "en": [
+          "Automatically extend warranty by 12 months on repair",
+          "Manage repair orders, spare parts and price information"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Hersteller, Importeure und Händler betroffener Produktgruppen gegenüber Verbrauchern.",
+          "en": "Manufacturers, importers and sellers of covered product groups to consumers."
+        },
+        "businessModels": [
+          "b2c"
+        ],
+        "activities": [
+          "electronics",
+          "physical-products"
+        ]
+      },
+      "validFrom": "2026-07-23",
+      "milestones": [
+        {
+          "date": "2026-07-23",
+          "label": {
+            "de": "Inkrafttreten der deutschen Umsetzung",
+            "en": "German implementation in force"
+          }
+        },
+        {
+          "date": "2028-01-01",
+          "label": {
+            "de": "Reparierbarkeit als Sachmerkmal auch in B2B-Kaufverträgen (§ 434 Abs. 3 BGB)",
+            "en": "Repairability as product feature also in B2B sales contracts (§ 434(3) BGB)"
+          }
+        }
+      ],
+      "sources": [
+        "https://www.handelskammer-hamburg.de/recht-steuern/aktuelle-rechtsthemen/umsetzungsgesetz-recht-auf-reparatur-rl-7130614",
+        "https://eur-lex.europa.eu/eli/dir/2024/1799/oj/deu"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-juschg-versand",
+      "law": "JuSchG / JMStV",
+      "norm": "§ 1 Abs. 4, §§ 9, 10, 12 JuSchG",
+      "title": {
+        "de": "Jugendschutz im Versandhandel & Altersverifikation",
+        "en": "Youth protection in mail order & age verification"
+      },
+      "url": "https://www.gesetze-im-internet.de/juschg/__1.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "e-commerce"
+      ],
+      "summary": {
+        "de": "Altersbeschränkte Waren (Alkohol, Tabak/E-Zigaretten, Medien mit Altersfreigabe ab 18) dürfen im Versandhandel nur verkauft werden, wenn durch technische Vorkehrungen sichergestellt ist, dass kein Versand an Minderjährige erfolgt – in der Praxis Altersverifikation bei Bestellung und persönliche Zustellung mit Altersprüfung.",
+        "en": "Age-restricted goods (alcohol, tobacco/e-cigarettes, media rated 18+) may only be sold by mail order if technical measures ensure no delivery to minors – in practice age verification at order and personal delivery with age check."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Altersverifikation im Checkout (z. B. eID, Schufa-Q-Bit, Ident-Dienst)",
+          "Versandoption „persönliche Übergabe mit Altersprüfung“ erzwingen",
+          "Altersgrenzen je Artikel als Stammdatum"
+        ],
+        "en": [
+          "Age verification in checkout (e.g. eID, ID service)",
+          "Enforce shipping option 'personal handover with age check'",
+          "Age limits per item as master data"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Online-Händler altersbeschränkter Waren und Medien.",
+          "en": "Online sellers of age-restricted goods and media."
+        },
+        "businessModels": [
+          "b2c"
+        ],
+        "activities": [
+          "age-restricted"
+        ]
+      },
+      "validFrom": "2003-04-01",
+      "sources": [
+        "https://www.gesetze-im-internet.de/juschg/__1.html",
+        "https://www.gesetze-im-internet.de/juschg/__12.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-hgb-267",
+      "law": "HGB",
+      "norm": "§§ 264, 267, 267a, 325",
+      "title": {
+        "de": "Größenklassen, Jahresabschluss & Offenlegung",
+        "en": "Size classes, annual accounts & disclosure"
+      },
+      "url": "https://www.gesetze-im-internet.de/hgb/__267.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "buchhaltung-steuern"
+      ],
+      "summary": {
+        "de": "Kapitalgesellschaften müssen einen Jahresabschluss aufstellen und im Unternehmensregister offenlegen; Umfang, Prüfungspflicht und Erleichterungen hängen von der Größenklasse ab (2 von 3 Merkmalen an zwei Stichtagen): Kleinst ≤ 450.000 € Bilanzsumme / 900.000 € Umsatz / 10 MA; klein ≤ 7,5 Mio. / 15 Mio. / 50; mittel ≤ 25 Mio. / 50 Mio. / 250 (seit 2024 angehoben). Ab mittelgroß Prüfungspflicht.",
+        "en": "Corporations must prepare annual accounts and disclose them in the company register; scope, audit duty and simplifications depend on size class (2 of 3 criteria on two reporting dates): micro ≤ €450k balance sheet / €900k revenue / 10 employees; small ≤ €7.5m / €15m / 50; medium ≤ €25m / €50m / 250 (raised in 2024). Audit required from medium size."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Größenklasse aus Bilanzsumme, Umsatz, MA-Zahl (zwei Jahre) ermitteln",
+          "Offenlegungsfrist (12 Monate nach Stichtag) überwachen"
+        ],
+        "en": [
+          "Determine size class from balance sheet, revenue, headcount (two years)",
+          "Monitor disclosure deadline (12 months after balance sheet date)"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Kapitalgesellschaften und haftungsbeschränkte Personengesellschaften (z. B. GmbH & Co. KG).",
+          "en": "Corporations and limited partnerships without a natural person as general partner (e.g. GmbH & Co. KG)."
+        },
+        "activities": [
+          "corporation"
+        ]
+      },
+      "validFrom": "2024-04-17",
+      "sources": [
+        "https://www.gesetze-im-internet.de/hgb/__267.html",
+        "https://www.ihk.de/hannover/hauptnavigation/recht/aktuell3/neue-schwellenwerte-fuer-unternehmensgroessen-in-kraft-6141538"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-ustg-18j",
+      "law": "UStG",
+      "norm": "§ 3c, § 18j",
+      "title": {
+        "de": "EU-Fernverkäufe & One-Stop-Shop (OSS)",
+        "en": "EU distance sales & One-Stop-Shop (OSS)"
+      },
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__18j.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "buchhaltung-steuern",
+        "rechnungsstellung",
+        "e-commerce"
+      ],
+      "summary": {
+        "de": "Überschreiten B2C-Fernverkäufe und digitale Dienstleistungen in andere EU-Länder insgesamt 10.000 € pro Jahr, gilt die Umsatzsteuer des Bestimmungslandes. Über das OSS-Verfahren beim BZSt kann diese zentral in Deutschland erklärt werden (Quartalsmeldung).",
+        "en": "If B2C distance sales and digital services to other EU countries exceed €10,000 per year in total, the VAT of the destination country applies. Through the OSS procedure at the BZSt this can be declared centrally in Germany (quarterly return)."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Steuersätze je EU-Land und Produktkategorie pflegen",
+          "10.000-€-Schwelle laufend überwachen",
+          "OSS-Bericht je Land und Steuersatz erzeugen"
+        ],
+        "en": [
+          "Maintain VAT rates per EU country and product category",
+          "Monitor the €10,000 threshold continuously",
+          "Generate OSS report per country and rate"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Händler mit B2C-Verkäufen in andere EU-Länder.",
+          "en": "Sellers with B2C sales to other EU countries."
+        },
+        "businessModels": [
+          "b2c"
+        ],
+        "activities": [
+          "cross-border-eu"
+        ]
+      },
+      "validFrom": "2021-07-01",
+      "sources": [
+        "https://www.gesetze-im-internet.de/ustg_1980/__18j.html",
+        "https://www.gesetze-im-internet.de/ustg_1980/__3c.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-ustg-13b",
+      "law": "UStG",
+      "norm": "§ 13b",
+      "title": {
+        "de": "Reverse Charge (Steuerschuldnerschaft des Leistungsempfängers)",
+        "en": "Reverse charge"
+      },
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__13b.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "rechnungsstellung",
+        "buchhaltung-steuern"
+      ],
+      "summary": {
+        "de": "Bei bestimmten Leistungen schuldet der Leistungsempfänger die Umsatzsteuer, u. a. bei B2B-Dienstleistungen ausländischer Unternehmer, Bauleistungen, Gebäudereinigung, Lieferung von Mobilfunkgeräten/Tablets/Laptops ab 5.000 € je Lieferung. Die Rechnung wird ohne USt mit Hinweis „Steuerschuldnerschaft des Leistungsempfängers“ ausgestellt.",
+        "en": "For certain supplies the recipient owes the VAT, incl. B2B services by foreign businesses, construction services, building cleaning, supplies of mobile phones/tablets/laptops of €5,000+ per delivery. The invoice is issued without VAT with the note 'reverse charge'."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Steuerschlüssel für Reverse Charge je Leistungsart und Kunde",
+          "Pflichthinweis auf der Rechnung automatisch setzen",
+          "USt-IdNr. des Kunden prüfen (qualifizierte Bestätigungsabfrage)"
+        ],
+        "en": [
+          "Tax codes for reverse charge per service type and customer",
+          "Add mandatory note on invoice automatically",
+          "Verify customer VAT ID (qualified confirmation request)"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Unternehmen mit grenzüberschreitenden B2B-Leistungen oder in betroffenen Branchen.",
+          "en": "Businesses with cross-border B2B services or in affected sectors."
+        },
+        "businessModels": [
+          "b2b"
+        ],
+        "activities": [
+          "invoicing"
+        ]
+      },
+      "validFrom": "2004-01-01",
+      "sources": [
+        "https://www.gesetze-im-internet.de/ustg_1980/__13b.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-ao-139c",
+      "law": "AO",
+      "norm": "§ 139c",
+      "title": {
+        "de": "Wirtschafts-Identifikationsnummer (W-IdNr.)",
+        "en": "Business identification number (W-IdNr.)"
+      },
+      "url": "https://www.gesetze-im-internet.de/ao_1977/__139c.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "buchhaltung-steuern",
+        "rechnungsstellung"
+      ],
+      "summary": {
+        "de": "Jedes wirtschaftlich tätige Unternehmen erhält schrittweise eine bundeseinheitliche W-IdNr. (Format DE + 9 Ziffern + 5-stelliges Unterscheidungsmerkmal). Vergabe seit Dezember 2024, Abschluss bis Ende 2026 geplant. Die Angabe ist bis 31.12.2026 noch nicht verpflichtend. Die USt-IdNr. bleibt für grenzüberschreitende Umsätze maßgeblich.",
+        "en": "Every economically active business gradually receives a nationwide W-IdNr. (format DE + 9 digits + 5-digit distinguishing suffix). Allocation since December 2024, completion planned by end of 2026. Stating it is not yet mandatory until 31 Dec 2026. The VAT ID remains relevant for cross-border transactions."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Feld für W-IdNr. inkl. Unterscheidungsmerkmal im Firmen- und Kundenstamm"
+        ],
+        "en": [
+          "Field for W-IdNr. incl. suffix in company and customer master data"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Alle wirtschaftlich Tätigen.",
+          "en": "All economically active persons and businesses."
+        },
+        "activities": [
+          "invoicing",
+          "bookkeeping"
+        ]
+      },
+      "validFrom": "2024-12-01",
+      "transitionUntil": "2026-12-31",
+      "sources": [
+        "https://www.gesetze-im-internet.de/ao_1977/__139c.html",
+        "https://www.frankfurt-main.ihk.de/recht/uebersicht-alle-rechtsthemen/steuerrecht/abgabenordnung/wirtschaftsidentifikationsnummer-6278214"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-pststg",
+      "law": "PStTG (DAC7)",
+      "norm": "§§ 12–14 PStTG",
+      "title": {
+        "de": "Meldepflicht für Plattformbetreiber (DAC7)",
+        "en": "Reporting duty for platform operators (DAC7)"
+      },
+      "url": "https://www.gesetze-im-internet.de/psttg/__13.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "buchhaltung-steuern",
+        "e-commerce"
+      ],
+      "summary": {
+        "de": "Betreiber digitaler Plattformen (Marktplätze, Vermietung, Dienstleistungsvermittlung) müssen Anbieter identifizieren, Daten verifizieren und jährlich bis 31.01. an das BZSt melden. Ausgenommen sind u. a. Verkäufer mit weniger als 30 Verkäufen und höchstens 2.000 € Umsatz pro Jahr.",
+        "en": "Operators of digital platforms (marketplaces, rentals, service brokering) must identify sellers, verify data and report annually by 31 Jan to the BZSt. Exempt are sellers with fewer than 30 sales and at most €2,000 revenue per year."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Anbieterdaten (Name, Adresse, Steuer-ID, IBAN) erfassen und prüfen",
+          "Umsätze je Anbieter und Quartal aggregieren",
+          "Jahresmeldung im BZSt-Format exportieren"
+        ],
+        "en": [
+          "Collect and verify seller data (name, address, tax ID, IBAN)",
+          "Aggregate revenue per seller and quarter",
+          "Export annual report in BZSt format"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Betreiber von Online-Plattformen mit Drittanbietern.",
+          "en": "Operators of online platforms with third-party sellers."
+        },
+        "activities": [
+          "platform"
+        ]
+      },
+      "validFrom": "2023-01-01",
+      "sources": [
+        "https://www.gesetze-im-internet.de/psttg/__13.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-estg-5b",
+      "law": "EStG",
+      "norm": "§ 5b",
+      "title": {
+        "de": "E-Bilanz: elektronische Übermittlung",
+        "en": "E-balance sheet: electronic submission"
+      },
+      "url": "https://www.gesetze-im-internet.de/estg/__5b.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "buchhaltung-steuern"
+      ],
+      "summary": {
+        "de": "Bilanzierende Unternehmen müssen Bilanz und GuV nach amtlichem Datensatz (XBRL-Taxonomie) elektronisch an das Finanzamt übermitteln. Die Taxonomie wird jährlich aktualisiert.",
+        "en": "Businesses preparing balance sheets must submit balance sheet and P&L electronically to the tax office using the official data set (XBRL taxonomy). The taxonomy is updated annually."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Kontenrahmen auf aktuelle E-Bilanz-Taxonomie mappen",
+          "Export über ERiC/ELSTER-Schnittstelle"
+        ],
+        "en": [
+          "Map chart of accounts to current e-balance taxonomy",
+          "Export via ERiC/ELSTER interface"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Bilanzierende Unternehmen.",
+          "en": "Businesses that prepare balance sheets."
+        },
+        "activities": [
+          "bookkeeping"
+        ]
+      },
+      "validFrom": "2013-01-01",
+      "sources": [
+        "https://www.gesetze-im-internet.de/estg/__5b.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-gwg-20",
+      "law": "GwG",
+      "norm": "§§ 19, 20",
+      "title": {
+        "de": "Transparenzregister: wirtschaftlich Berechtigte",
+        "en": "Transparency register: beneficial owners"
+      },
+      "url": "https://www.gesetze-im-internet.de/gwg_2017/__20.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "buchhaltung-steuern",
+        "crm-datenschutz"
+      ],
+      "summary": {
+        "de": "Juristische Personen und eingetragene Personengesellschaften müssen ihre wirtschaftlich Berechtigten (in der Regel > 25 % Anteile oder Stimmrechte) aktiv im Transparenzregister eintragen und aktuell halten. Verpflichtete nach GwG müssen bei Geschäftsbeziehungen Unstimmigkeiten melden.",
+        "en": "Legal entities and registered partnerships must actively register and keep up to date their beneficial owners (generally > 25% shares or voting rights) in the transparency register. Obliged entities under the AML Act must report discrepancies."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Wirtschaftlich Berechtigte im Geschäftspartner-Stamm erfassen (KYC)"
+        ],
+        "en": [
+          "Record beneficial owners in business partner master data (KYC)"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Alle juristischen Personen und eingetragenen Personengesellschaften.",
+          "en": "All legal entities and registered partnerships."
+        },
+        "activities": [
+          "corporation"
+        ]
+      },
+      "validFrom": "2021-08-01",
+      "sources": [
+        "https://www.gesetze-im-internet.de/gwg_2017/__20.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-agg",
+      "law": "AGG",
+      "norm": "§§ 1, 7, 11, 15",
+      "title": {
+        "de": "Diskriminierungsschutz (auch in Stellenanzeigen)",
+        "en": "Anti-discrimination (incl. job ads)"
+      },
+      "url": "https://www.gesetze-im-internet.de/agg/__11.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "hr",
+        "ki"
+      ],
+      "summary": {
+        "de": "Benachteiligungen wegen Rasse/ethnischer Herkunft, Geschlecht, Religion, Behinderung, Alter oder sexueller Identität sind verboten – von der Stellenausschreibung bis zur Kündigung. Ansprüche auf Entschädigung (bis zu 3 Monatsgehälter bei Nichteinstellung) müssen binnen 2 Monaten geltend gemacht werden. Relevant auch für KI-gestützte Bewerberauswahl.",
+        "en": "Discrimination based on race/ethnic origin, sex, religion, disability, age or sexual identity is prohibited – from job ad to dismissal. Compensation claims (up to 3 months' salary if not hired) must be asserted within 2 months. Also relevant for AI-supported candidate selection."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Neutrale Stellenausschreibungen (m/w/d), keine Altersangaben",
+          "Bewerbungsprozess und Absagegründe dokumentieren",
+          "Bewerberdaten nach ca. 6 Monaten löschen (AGG-Frist + Puffer)",
+          "KI-Auswahlkriterien auf Bias prüfen"
+        ],
+        "en": [
+          "Neutral job ads (m/f/d), no age requirements",
+          "Document application process and rejection reasons",
+          "Delete applicant data after approx. 6 months (AGG period + buffer)",
+          "Check AI selection criteria for bias"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Alle Arbeitgeber, auch im Bewerbungsverfahren.",
+          "en": "All employers, including recruiting."
+        },
+        "activities": [
+          "employees"
+        ]
+      },
+      "validFrom": "2006-08-18",
+      "sources": [
+        "https://www.gesetze-im-internet.de/agg/__11.html",
+        "https://www.gesetze-im-internet.de/agg/__15.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-arbzg",
+      "law": "ArbZG",
+      "norm": "§§ 3–5",
+      "title": {
+        "de": "Höchstarbeitszeit, Pausen & Ruhezeiten",
+        "en": "Maximum working hours, breaks & rest periods"
+      },
+      "url": "https://www.gesetze-im-internet.de/arbzg/__3.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "hr"
+      ],
+      "summary": {
+        "de": "Werktägliche Arbeitszeit grundsätzlich max. 8 Stunden, verlängerbar auf 10 Stunden bei Ausgleich auf durchschnittlich 8 Stunden (6 Monate). Pausen: 30 Minuten ab 6 Stunden, 45 Minuten ab 9 Stunden. Ruhezeit: mindestens 11 Stunden zwischen zwei Arbeitstagen. Eine Reform (wöchentliche Höchstarbeitszeit per Tarifvertrag) ist geplant, siehe eigener Eintrag.",
+        "en": "Daily working time generally max. 8 hours, extendable to 10 hours if averaged to 8 hours (6 months). Breaks: 30 minutes from 6 hours, 45 minutes from 9 hours. Rest: at least 11 hours between working days. A reform (weekly maximum via collective agreement) is planned, see separate entry."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Warnungen bei > 10 Stunden/Tag, fehlenden Pausen, < 11 Stunden Ruhezeit",
+          "Ausgleichszeitraum (Durchschnitt 8 h) auswerten"
+        ],
+        "en": [
+          "Warnings for > 10 hours/day, missing breaks, < 11 hours rest",
+          "Evaluate compensation period (8h average)"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Alle Arbeitgeber (Ausnahmen u. a. leitende Angestellte).",
+          "en": "All employers (exceptions incl. senior executives)."
+        },
+        "activities": [
+          "employees"
+        ]
+      },
+      "validFrom": "1994-07-01",
+      "sources": [
+        "https://www.gesetze-im-internet.de/arbzg/__3.html",
+        "https://www.gesetze-im-internet.de/arbzg/__4.html",
+        "https://www.gesetze-im-internet.de/arbzg/__5.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-sgb4-109-eau",
+      "law": "SGB IV",
+      "norm": "§ 109",
+      "title": {
+        "de": "Elektronische Arbeitsunfähigkeitsbescheinigung (eAU)",
+        "en": "Electronic sick note (eAU)"
+      },
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__109.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "hr"
+      ],
+      "summary": {
+        "de": "Arbeitgeber rufen Arbeitsunfähigkeitsdaten gesetzlich Versicherter elektronisch bei der Krankenkasse ab (seit 01.01.2023 verpflichtend). Beschäftigte müssen die AU weiterhin melden, aber keinen Papierschein mehr vorlegen. Privat Versicherte sind nicht erfasst.",
+        "en": "Employers retrieve sick note data of statutorily insured employees electronically from the health insurer (mandatory since 1 Jan 2023). Employees must still report sickness but no longer submit paper certificates. Privately insured persons are not covered."
+      },
+      "softwareRequirements": {
+        "de": [
+          "eAU-Abruf über zertifizierte Entgeltabrechnung bzw. sv.net",
+          "Krankmeldung und Abruf-Status im HR-System verknüpfen"
+        ],
+        "en": [
+          "eAU retrieval via certified payroll software or sv.net",
+          "Link sickness report and retrieval status in HR system"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Alle Arbeitgeber mit gesetzlich versicherten Beschäftigten.",
+          "en": "All employers with statutorily insured employees."
+        },
+        "activities": [
+          "employees"
+        ]
+      },
+      "validFrom": "2023-01-01",
+      "sources": [
+        "https://www.gesetze-im-internet.de/sgb_4/__109.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-lohn-meldungen",
+      "law": "SGB IV / EStG",
+      "norm": "§ 28a SGB IV, DEÜV, § 39e EStG",
+      "title": {
+        "de": "Lohnabrechnung: SV-Meldungen & ELStAM",
+        "en": "Payroll: social security reports & ELStAM"
+      },
+      "url": "https://www.gesetze-im-internet.de/sgb_4/__28a.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "hr",
+        "buchhaltung-steuern"
+      ],
+      "summary": {
+        "de": "Arbeitgeber müssen Beschäftigte elektronisch bei der Sozialversicherung an-, ab- und jährlich melden (DEÜV) und die Lohnsteuerabzugsmerkmale (ELStAM) beim Bundeszentralamt für Steuern abrufen. Meldungen sind nur aus systemgeprüften Abrechnungsprogrammen oder über sv.net zulässig. In bestimmten Branchen (u. a. Bau, Gastronomie, Logistik) gilt die Sofortmeldepflicht.",
+        "en": "Employers must register, deregister and annually report employees electronically to social security (DEÜV) and retrieve wage tax deduction data (ELStAM) from the Federal Central Tax Office. Reports only from system-certified payroll software or sv.net. Certain sectors (incl. construction, hospitality, logistics) require immediate registration."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Nur systemgeprüfte Entgeltabrechnung (ITSG-Zertifizierung) einsetzen oder anbinden",
+          "Melde-Fristen (An-/Abmeldung, Jahresmeldung bis 15.02.) überwachen",
+          "ELStAM-Änderungslisten monatlich abrufen"
+        ],
+        "en": [
+          "Use or integrate only certified payroll software (ITSG certification)",
+          "Monitor reporting deadlines (registration, annual report by 15 Feb)",
+          "Retrieve ELStAM change lists monthly"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Alle Arbeitgeber.",
+          "en": "All employers."
+        },
+        "activities": [
+          "employees"
+        ]
+      },
+      "validFrom": "2013-01-01",
+      "sources": [
+        "https://www.gesetze-im-internet.de/sgb_4/__28a.html",
+        "https://www.gesetze-im-internet.de/estg/__39e.html"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-beschaeftigtendatenschutz",
+      "law": "DSGVO / BDSG",
+      "norm": "Art. 88 DSGVO, § 26 BDSG",
+      "title": {
+        "de": "Beschäftigtendatenschutz",
+        "en": "Employee data protection"
+      },
+      "url": "https://www.gesetze-im-internet.de/bdsg_2018/__26.html",
+      "jurisdiction": "DE",
+      "categories": [
+        "hr",
+        "crm-datenschutz"
+      ],
+      "summary": {
+        "de": "§ 26 Abs. 1 Satz 1 BDSG ist nach EuGH (C-34/21) und BAG (8 AZR 209/21, 2025) als Rechtsgrundlage unanwendbar; Verarbeitungen von Beschäftigtendaten stützen sich direkt auf Art. 6 (insb. lit. b, c, f) und Art. 9 DSGVO. Einwilligungen von Beschäftigten sind wegen des Abhängigkeitsverhältnisses nur eingeschränkt freiwillig. Ein Beschäftigtendatengesetz ist angekündigt, aber nicht verabschiedet.",
+        "en": "Per CJEU (C-34/21) and Federal Labour Court (8 AZR 209/21, 2025), § 26(1) sentence 1 BDSG cannot be used as legal basis; processing of employee data relies directly on Art. 6 (esp. (b), (c), (f)) and Art. 9 GDPR. Employee consent is only freely given to a limited extent. An employee data act has been announced but not passed."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Rechtsgrundlage je HR-Datenfeld dokumentieren",
+          "Strenge Zugriffsrechte auf Personalakten, Gesundheitsdaten getrennt speichern",
+          "Löschfristen für Personal- und Bewerberdaten"
+        ],
+        "en": [
+          "Document legal basis per HR data field",
+          "Strict access rights to personnel files, store health data separately",
+          "Retention periods for personnel and applicant data"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Alle Arbeitgeber.",
+          "en": "All employers."
+        },
+        "activities": [
+          "employees"
+        ]
+      },
+      "validFrom": "2018-05-25",
+      "sources": [
+        "https://www.gesetze-im-internet.de/bdsg_2018/__26.html",
+        "https://www.dr-datenschutz.de/eugh-kritik-am-deutschen-beschaeftigtendatenschutz/"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "eu-plattformarbeit",
+      "law": "Plattformarbeits-RL",
+      "norm": "RL (EU) 2024/2831",
+      "title": {
+        "de": "Plattformarbeit & algorithmisches Management",
+        "en": "Platform work & algorithmic management"
+      },
+      "url": "https://eur-lex.europa.eu/eli/dir/2024/2831/oj/deu",
+      "urlEn": "https://eur-lex.europa.eu/eli/dir/2024/2831/oj/eng",
+      "jurisdiction": "EU",
+      "categories": [
+        "hr",
+        "ki"
+      ],
+      "summary": {
+        "de": "Umsetzungsfrist 02.12.2026; ein deutscher Entwurf liegt (Stand Oktober 2026) noch nicht vor. Vorgesehen: Vermutung eines Arbeitsverhältnisses bei Kontrolle und Steuerung durch die Plattform, Transparenz über automatisierte Überwachungs- und Entscheidungssysteme, menschliche Überprüfung wichtiger Entscheidungen (z. B. Kontosperrung), Verbot der Verarbeitung bestimmter Daten (z. B. emotionaler Zustand).",
+        "en": "Transposition deadline 2 Dec 2026; no German draft yet (as of October 2026). Planned: presumption of employment where the platform exercises control and direction, transparency on automated monitoring and decision systems, human review of significant decisions (e.g. account suspension), ban on processing certain data (e.g. emotional state)."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Automatisierte Entscheidungen über Plattformarbeitende protokollieren und erklärbar machen",
+          "Menschliche Überprüfung bei Sperrungen und Vergütungsentscheidungen"
+        ],
+        "en": [
+          "Log and explain automated decisions about platform workers",
+          "Human review for suspensions and pay decisions"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Digitale Arbeitsplattformen (z. B. Lieferdienste, Fahrdienste, Freelancer-Plattformen).",
+          "en": "Digital labour platforms (e.g. delivery, ride-hailing, freelancer platforms)."
+        },
+        "activities": [
+          "platform"
+        ]
+      },
+      "validFrom": null,
+      "statusOverride": "planned",
+      "stage": {
+        "de": "Umsetzungsfrist 02.12.2026, deutscher Entwurf ausstehend",
+        "en": "Deadline 2 Dec 2026, German draft pending"
+      },
+      "sources": [
+        "https://eur-lex.europa.eu/eli/dir/2024/2831/oj/deu",
+        "https://www.bundestag.de/presse/hib/kurzmeldungen-1167478"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "eu-batterien",
+      "law": "BattVO / BattDG",
+      "norm": "VO (EU) 2023/1542, § 4 BattDG",
+      "title": {
+        "de": "Batterien: Registrierung, Kennzeichnung & Rücknahme",
+        "en": "Batteries: registration, labelling & take-back"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj/deu",
+      "urlEn": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj/eng",
+      "jurisdiction": "EU",
+      "categories": [
+        "warenwirtschaft-produkt",
+        "e-commerce"
+      ],
+      "summary": {
+        "de": "Hersteller (auch Importeure und Eigenmarken) müssen sich vor dem Inverkehrbringen bei der Stiftung EAR registrieren; Händler und Fulfillment-Dienstleister dürfen nur Batterien registrierter Hersteller anbieten (§ 4 BattDG). Händler müssen Altbatterien zurücknehmen und Endnutzer informieren. Die Sorgfaltspflichten in der Lieferkette (Art. 48 ff.) wurden auf 18.08.2027 verschoben; Batteriepass für Industrie- und E-Auto-Batterien ab 18.02.2027.",
+        "en": "Producers (incl. importers and private labels) must register with Stiftung EAR before placing on the market; sellers and fulfilment providers may only offer batteries of registered producers (§ 4 BattDG). Sellers must take back waste batteries and inform end users. Supply chain due diligence (Art. 48 ff.) postponed to 18 Aug 2027; battery passport for industrial and EV batteries from 18 Feb 2027."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Registrierungsnummer des Batterie-Herstellers je Artikel speichern und prüfen",
+          "Rücknahme- und Entsorgungshinweise im Shop",
+          "Batteriedaten (Typ, Chemie, Gewicht) im PIM"
+        ],
+        "en": [
+          "Store and check battery producer registration number per item",
+          "Take-back and disposal information in shop",
+          "Battery data (type, chemistry, weight) in PIM"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Hersteller, Importeure und Händler von Batterien und Geräten mit Batterien.",
+          "en": "Producers, importers and sellers of batteries and devices containing batteries."
+        },
+        "activities": [
+          "batteries"
+        ]
+      },
+      "validFrom": "2024-02-18",
+      "milestones": [
+        {
+          "date": "2025-08-18",
+          "label": {
+            "de": "BattDG ersetzt BattG, neue Registrierung",
+            "en": "BattDG replaces BattG, new registration"
+          }
+        },
+        {
+          "date": "2027-02-18",
+          "label": {
+            "de": "Batteriepass (Industrie-/EV-Batterien)",
+            "en": "Battery passport (industrial/EV batteries)"
+          }
+        },
+        {
+          "date": "2027-08-18",
+          "label": {
+            "de": "Sorgfaltspflichten in der Lieferkette",
+            "en": "Supply chain due diligence"
+          }
+        }
+      ],
+      "sources": [
+        "https://eur-lex.europa.eu/eli/reg/2023/1542/oj/deu",
+        "https://www.gesetze-im-internet.de/battdg/",
+        "https://www.lizenzero.de/blog/eu-batterieverordnung-start-der-sorgfaltspflichten-soll-auf-2027-verschoben-werden/"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "eu-cbam",
+      "law": "CBAM",
+      "norm": "VO (EU) 2023/956",
+      "title": {
+        "de": "CO₂-Grenzausgleich für Importe",
+        "en": "Carbon border adjustment for imports"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/956/oj/deu",
+      "urlEn": "https://eur-lex.europa.eu/eli/reg/2023/956/oj/eng",
+      "jurisdiction": "EU",
+      "categories": [
+        "warenwirtschaft-produkt",
+        "buchhaltung-steuern"
+      ],
+      "summary": {
+        "de": "Seit 01.01.2026 definitive Phase: Wer mehr als 50 Tonnen pro Jahr an Zement, Eisen/Stahl, Aluminium oder Düngemitteln (sowie jede Menge Strom/Wasserstoff) aus Drittländern importiert, braucht den Status als zugelassener CBAM-Anmelder (DEHSt). Zertifikate werden ab 01.02.2027 verkauft; die erste Jahreserklärung für 2026 ist bis 30.09.2027 fällig.",
+        "en": "Definitive phase since 1 Jan 2026: anyone importing more than 50 tonnes per year of cement, iron/steel, aluminium or fertilisers (and any amount of electricity/hydrogen) from third countries needs authorised CBAM declarant status (DEHSt). Certificates sold from 1 Feb 2027; first annual declaration for 2026 due by 30 Sep 2027."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Importmengen je CBAM-Warengruppe (KN-Code) kumuliert überwachen",
+          "Eingebettete Emissionen vom Lieferanten erfassen"
+        ],
+        "en": [
+          "Monitor cumulative import quantities per CBAM goods group (CN code)",
+          "Collect embedded emissions from suppliers"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Importeure von CBAM-Waren über 50 t/Jahr.",
+          "en": "Importers of CBAM goods above 50 t/year."
+        },
+        "activities": [
+          "imports"
+        ]
+      },
+      "validFrom": "2026-01-01",
+      "transitionUntil": "2027-09-30",
+      "milestones": [
+        {
+          "date": "2026-01-01",
+          "label": {
+            "de": "Definitive Phase, Anmelder-Status nötig",
+            "en": "Definitive phase, declarant status required"
+          }
+        },
+        {
+          "date": "2027-02-01",
+          "label": {
+            "de": "Verkauf der CBAM-Zertifikate",
+            "en": "Sale of CBAM certificates"
+          }
+        },
+        {
+          "date": "2027-09-30",
+          "label": {
+            "de": "Erste Jahreserklärung (für 2026)",
+            "en": "First annual declaration (for 2026)"
+          }
+        }
+      ],
+      "sources": [
+        "https://www.dehst.de/EN/Topics/CBAM/CBAM-definitive-regime-2026/cbam-definitive-regime-2026_node.html",
+        "https://eur-lex.europa.eu/eli/reg/2023/956/oj/deu"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "eu-eudr",
+      "law": "EUDR",
+      "norm": "VO (EU) 2023/1115 (geändert durch VO (EU) 2025/2650)",
+      "title": {
+        "de": "Entwaldungsfreie Lieferketten",
+        "en": "Deforestation-free supply chains"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1115/oj/deu",
+      "urlEn": "https://eur-lex.europa.eu/eli/reg/2023/1115/oj/eng",
+      "jurisdiction": "EU",
+      "categories": [
+        "warenwirtschaft-produkt"
+      ],
+      "summary": {
+        "de": "Rinder, Kakao, Kaffee, Ölpalme, Kautschuk, Soja, Holz und daraus hergestellte Produkte (z. B. Schokolade, Möbel, Papier, Leder) dürfen nur in Verkehr gebracht werden, wenn sie entwaldungsfrei und legal erzeugt sind (Sorgfaltserklärung mit Geodaten). Nach erneuter Verschiebung gilt sie ab 30.12.2026 für große und mittlere sowie ab 30.06.2027 für kleine und Kleinstunternehmen; Erleichterungen für nachgelagerte Händler.",
+        "en": "Cattle, cocoa, coffee, oil palm, rubber, soy, wood and derived products (e.g. chocolate, furniture, paper, leather) may only be placed on the market if deforestation-free and legally produced (due diligence statement with geolocation). After another postponement it applies from 30 Dec 2026 for large and medium and from 30 Jun 2027 for small and micro enterprises; simplifications for downstream traders."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Betroffene Artikel per Zolltarifnummer kennzeichnen",
+          "Referenznummern der Sorgfaltserklärungen (TRACES) je Charge/Lieferung speichern",
+          "Geodaten der Erzeugungsflächen vom Lieferanten erfassen"
+        ],
+        "en": [
+          "Flag affected items by customs tariff number",
+          "Store due diligence statement reference numbers (TRACES) per batch/delivery",
+          "Collect geolocation of production plots from suppliers"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Marktteilnehmer und Händler betroffener Rohstoffe und Produkte.",
+          "en": "Operators and traders of covered commodities and products."
+        },
+        "activities": [
+          "physical-products",
+          "imports"
+        ]
+      },
+      "validFrom": "2026-12-30",
+      "milestones": [
+        {
+          "date": "2026-12-30",
+          "label": {
+            "de": "Große und mittlere Unternehmen",
+            "en": "Large and medium enterprises"
+          }
+        },
+        {
+          "date": "2027-06-30",
+          "label": {
+            "de": "Kleine und Kleinstunternehmen",
+            "en": "Small and micro enterprises"
+          }
+        }
+      ],
+      "sources": [
+        "https://eur-lex.europa.eu/eli/reg/2023/1115/oj/deu",
+        "https://www.hoffmannliebs.de/compliance/update-zur-eudr-erneute-verschiebung-und-materielle-vereinfachungen-beschlossen/"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "eu-espr",
+      "law": "Ökodesign-VO (ESPR)",
+      "norm": "VO (EU) 2024/1781, Art. 24, 25",
+      "title": {
+        "de": "Ökodesign: Vernichtungsverbot & digitaler Produktpass",
+        "en": "Ecodesign: destruction ban & digital product passport"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1781/oj/deu",
+      "urlEn": "https://eur-lex.europa.eu/eli/reg/2024/1781/oj/eng",
+      "jurisdiction": "EU",
+      "categories": [
+        "warenwirtschaft-produkt",
+        "e-commerce"
+      ],
+      "summary": {
+        "de": "Große Unternehmen dürfen seit 19.07.2026 unverkaufte Kleidung, Bekleidungszubehör und Schuhe nicht mehr vernichten (mittlere ab 2030, kleine ausgenommen) und müssen jährlich offenlegen, welche unverkauften Produkte sie entsorgen (standardisiertes Format ab Februar 2027). Produktspezifische Anforderungen inkl. digitalem Produktpass folgen schrittweise per delegierten Rechtsakten (zuerst u. a. Textilien, Stahl).",
+        "en": "Since 19 Jul 2026 large enterprises may no longer destroy unsold apparel, clothing accessories and footwear (medium from 2030, small exempt) and must disclose annually which unsold products they discard (standardised format from February 2027). Product-specific requirements incl. digital product passport follow gradually via delegated acts (first incl. textiles, steel)."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Retouren und Restbestände mit Verwertungsweg (Verkauf, Spende, Recycling, Vernichtung) erfassen",
+          "Jahresbericht zu vernichteten unverkauften Produkten erzeugen",
+          "Datenmodell für digitalen Produktpass vorbereiten"
+        ],
+        "en": [
+          "Record returns and surplus stock with disposal route (sale, donation, recycling, destruction)",
+          "Generate annual report on destroyed unsold products",
+          "Prepare data model for digital product passport"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Große Unternehmen (≥ 250 Beschäftigte oder > 50 Mio. € Umsatz) mit Bekleidung/Schuhen; Offenlegung für weitere Produkte.",
+          "en": "Large enterprises (≥ 250 employees or > €50m revenue) with apparel/footwear; disclosure for other products too."
+        },
+        "activities": [
+          "physical-products"
+        ],
+        "thresholds": {
+          "mode": "any",
+          "conditions": [
+            {
+              "metric": "employees",
+              "min": 250
+            },
+            {
+              "metric": "revenue",
+              "min": 50000001
+            }
+          ]
+        }
+      },
+      "validFrom": "2024-07-18",
+      "milestones": [
+        {
+          "date": "2026-07-19",
+          "label": {
+            "de": "Vernichtungsverbot Textilien/Schuhe (große Unternehmen)",
+            "en": "Destruction ban textiles/footwear (large enterprises)"
+          }
+        },
+        {
+          "date": "2027-02-01",
+          "label": {
+            "de": "Standardisiertes Offenlegungsformat",
+            "en": "Standardised disclosure format"
+          }
+        },
+        {
+          "date": "2030-07-19",
+          "label": {
+            "de": "Vernichtungsverbot für mittlere Unternehmen",
+            "en": "Destruction ban for medium enterprises"
+          }
+        }
+      ],
+      "sources": [
+        "https://www.umweltbundesamt.de/themen/wirtschaft-konsum/produkte/oekodesign/oekodesign-verordnung/vernichtungsverbot-transparenzpflicht-fuer",
+        "https://eur-lex.europa.eu/eli/reg/2024/1781/oj/deu"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-exportkontrolle",
+      "law": "AWG / Dual-Use-VO",
+      "norm": "VO (EU) 2021/821, AWG, AWV, EU-Sanktionen",
+      "title": {
+        "de": "Exportkontrolle & Sanktionslistenprüfung",
+        "en": "Export control & sanctions screening"
+      },
+      "url": "https://www.gesetze-im-internet.de/awg_2013/",
+      "urlEn": "https://eur-lex.europa.eu/eli/reg/2021/821/oj/eng",
+      "jurisdiction": "DE",
+      "categories": [
+        "warenwirtschaft-produkt",
+        "crm-datenschutz"
+      ],
+      "summary": {
+        "de": "Ausfuhren von Gütern mit doppeltem Verwendungszweck (inkl. bestimmter Software und Technologie, z. B. Verschlüsselung) sind genehmigungspflichtig (BAFA). EU-Sanktionsverordnungen verbieten Geschäfte mit gelisteten Personen und Unternehmen – das gilt für alle Unternehmen, auch innerhalb der EU. Zusätzlich gelten Embargos (u. a. Russland/Belarus) mit No-Russia-Klausel.",
+        "en": "Exports of dual-use goods (incl. certain software and technology, e.g. encryption) require a licence (BAFA). EU sanctions regulations prohibit dealings with listed persons and entities – this applies to all businesses, including within the EU. Embargoes also apply (incl. Russia/Belarus) with a no-Russia clause."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Sanktionslistenprüfung von Kunden, Lieferanten und Empfängern (automatisiert, mit Protokoll)",
+          "Ausfuhrlistennummer/Güterklassifizierung je Artikel",
+          "Liefersperre bei Treffern bis zur Freigabe"
+        ],
+        "en": [
+          "Sanctions screening of customers, suppliers and consignees (automated, logged)",
+          "Export control classification per item",
+          "Delivery block on hits until cleared"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Alle Unternehmen (Sanktionslisten); Exporteure von Dual-Use-Gütern (Genehmigung).",
+          "en": "All businesses (sanctions lists); exporters of dual-use goods (licences)."
+        }
+      },
+      "validFrom": "2021-09-09",
+      "sources": [
+        "https://eur-lex.europa.eu/eli/reg/2021/821/oj/deu",
+        "https://www.gesetze-im-internet.de/awg_2013/"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "eu-eidas2",
+      "law": "eIDAS 2",
+      "norm": "VO (EU) 2024/1183, Art. 5f",
+      "title": {
+        "de": "EU-Digitale-Identität-Wallet (EUDI-Wallet)",
+        "en": "EU Digital Identity Wallet (EUDI Wallet)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1183/oj/deu",
+      "urlEn": "https://eur-lex.europa.eu/eli/reg/2024/1183/oj/eng",
+      "jurisdiction": "EU",
+      "categories": [
+        "it-sicherheit",
+        "crm-datenschutz"
+      ],
+      "summary": {
+        "de": "Mitgliedstaaten müssen bis Ende 2026 eine EUDI-Wallet bereitstellen; die deutsche Wallet soll Anfang 2027 starten. Private Unternehmen, die gesetzlich oder vertraglich starke Nutzerauthentifizierung verlangen (z. B. Banken, Energie, Telekommunikation, Gesundheit), müssen die Wallet bis 24.12.2027 auf Wunsch des Nutzers akzeptieren; Kleinst- und Kleinunternehmen sind ausgenommen.",
+        "en": "Member states must provide an EUDI Wallet by end of 2026; the German wallet is expected to launch in early 2027. Private businesses legally or contractually requiring strong user authentication (e.g. banks, energy, telecoms, health) must accept the wallet at the user's request by 24 Dec 2027; micro and small enterprises are exempt."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Login/Identifizierung über EUDI-Wallet (OpenID4VP) einplanen"
+        ],
+        "en": [
+          "Plan login/identification via EUDI Wallet (OpenID4VP)"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Unternehmen mit starker Nutzer-Authentifizierung ab mittlerer Größe.",
+          "en": "Medium-sized and larger businesses requiring strong user authentication."
+        },
+        "activities": [
+          "strong-auth"
+        ],
+        "exemptions": [
+          {
+            "conditions": [
+              {
+                "metric": "employees",
+                "max": 49
+              },
+              {
+                "metric": "revenue",
+                "max": 10000000
+              }
+            ],
+            "text": {
+              "de": "Kleinst- und Kleinunternehmen",
+              "en": "Micro and small enterprises"
+            }
+          }
+        ]
+      },
+      "validFrom": "2024-05-20",
+      "transitionUntil": "2027-12-24",
+      "milestones": [
+        {
+          "date": "2026-12-31",
+          "label": {
+            "de": "Wallet-Bereitstellung durch Mitgliedstaaten",
+            "en": "Wallet provision by member states"
+          }
+        },
+        {
+          "date": "2027-12-24",
+          "label": {
+            "de": "Akzeptanzpflicht für private Unternehmen",
+            "en": "Acceptance obligation for private businesses"
+          }
+        }
+      ],
+      "sources": [
+        "https://eur-lex.europa.eu/eli/reg/2024/1183/oj/deu",
+        "https://www.landtag-bw.de/resource/blob/611944/4c60de45bdc1158f3da40be0c4bf8c5c/17_10090_D.pdf"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "de-kritis-dachg",
+      "law": "KRITIS-DachG",
+      "norm": "KRITIS-Dachgesetz",
+      "title": {
+        "de": "Physische Resilienz kritischer Anlagen",
+        "en": "Physical resilience of critical facilities"
+      },
+      "url": "https://www.gesetze-im-internet.de/kritisdachg/",
+      "jurisdiction": "DE",
+      "categories": [
+        "it-sicherheit"
+      ],
+      "summary": {
+        "de": "Seit 17.03.2026 in Kraft (Umsetzung der CER-Richtlinie): Betreiber kritischer Anlagen (u. a. Energie, Transport, Gesundheit, Wasser, Lebensmittel, digitale Infrastruktur) müssen sich beim BBK registrieren, Risikoanalysen erstellen, Resilienzmaßnahmen umsetzen und Vorfälle melden. Die Registrierungsfrist läuft 3 Monate nach Inkrafttreten der noch ausstehenden KRITIS-Verordnung, die festlegt, welche Anlagen erfasst sind.",
+        "en": "In force since 17 Mar 2026 (implementing the CER Directive): operators of critical facilities (incl. energy, transport, health, water, food, digital infrastructure) must register with the BBK, perform risk analyses, implement resilience measures and report incidents. The registration deadline runs 3 months after the still pending KRITIS ordinance, which defines covered facilities, enters into force."
+      },
+      "softwareRequirements": {
+        "de": [
+          "Vorfallmeldung und Resilienzplan dokumentieren"
+        ],
+        "en": [
+          "Document incident reporting and resilience plan"
+        ]
+      },
+      "appliesTo": {
+        "text": {
+          "de": "Betreiber kritischer Anlagen (Schwellenwerte folgen per Verordnung).",
+          "en": "Operators of critical facilities (thresholds to follow by ordinance)."
+        },
+        "activities": [
+          "critical-sector"
+        ]
+      },
+      "validFrom": "2026-03-17",
+      "statusOverride": "transition",
+      "stage": {
+        "de": "In Kraft; KRITIS-Verordnung (Anlagen & Schwellenwerte) ausstehend",
+        "en": "In force; KRITIS ordinance (facilities & thresholds) pending"
+      },
+      "sources": [
+        "https://www.gesetze-im-internet.de/kritisdachg/",
+        "https://www.goerg.de/de/aktuelles/veroeffentlichungen/09-03-2026/kritis-dachgesetz-neuer-bundeseinheitlicher-rechtsrahmen-fuer-den-physischen-schutz-kritischer-infrastrukturen-tritt-in-kraft"
+      ],
+      "lastVerified": "2026-10-12"
     }
   ]
 }

@@ -140,3 +140,5 @@ code { font-size: 0.85em; }
   .link-btn { align-self: flex-end; }
   .rule { padding: 14px; }
 }
+
+.report-cta { font-weight: 600; }

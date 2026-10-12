@@ -1,4 +1,5 @@
 import { computeStatus, evaluateApplicability } from "./logic.js";
+import { initContact } from "./contact.js";
 
 const UI = {
   de: {
@@ -33,6 +34,12 @@ const UI = {
     rel: { applies: "Betrifft dich", check: "Prüfen", exempt: "Ausgenommen", no: "Betrifft dich nicht" },
     empty: "Keine Regeln gefunden. Filter anpassen?",
     imprint: "Impressum",
+    reportNav: "Gesetz melden",
+    reportRule: "Fehler melden",
+    mailSubject: "ERP-Rechtsradar: Gesetz fehlt / Korrektur",
+    mailBody: "Hallo,\n\nfolgendes Gesetz fehlt bzw. ist nicht korrekt:\n\nGesetz / Paragraph:\nLink zum Gesetz:\nBeschreibung:\n",
+    mailRuleSubject: (r) => `ERP-Rechtsradar: Korrektur zu ${r.id}`,
+    mailRuleBody: (r) => `Hallo,\n\nder Eintrag „${r.law} ${r.norm} – ${r.title.de}“ (ID ${r.id}) ist aus meiner Sicht nicht korrekt:\n\nWas ist falsch:\nLink zur Quelle:\n`,
     privacy: "Datenschutz",
     meta: (m) => `Datenstand ${m.lastUpdated} · Version ${m.dataVersion} · Status berechnet am ${m.statusComputedAt} · erstellt mit KI, monatlich aktualisiert`,
     num: { employees: "Mitarbeitende", revenue: "Jahresumsatz in €", balanceSheet: "Bilanzsumme in €", profit: "Jahresgewinn in €" }
@@ -69,6 +76,12 @@ const UI = {
     rel: { applies: "Affects you", check: "Check", exempt: "Exempt", no: "Does not affect you" },
     empty: "No rules found. Adjust filters?",
     imprint: "Legal notice",
+    reportNav: "Report a law",
+    reportRule: "Report an error",
+    mailSubject: "ERP-Rechtsradar: missing law / correction",
+    mailBody: "Hello,\n\nthe following law is missing or incorrect:\n\nLaw / section:\nLink to the law:\nDescription:\n",
+    mailRuleSubject: (r) => `ERP-Rechtsradar: correction for ${r.id}`,
+    mailRuleBody: (r) => `Hello,\n\nthe entry "${r.law} ${r.norm} – ${r.title.en}" (ID ${r.id}) seems incorrect:\n\nWhat is wrong:\nLink to source:\n`,
     privacy: "Privacy",
     meta: (m) => `Data as of ${m.lastUpdated} · version ${m.dataVersion} · status computed ${m.statusComputedAt} · AI-generated, updated monthly`,
     num: { employees: "Employees", revenue: "Annual revenue in €", balanceSheet: "Balance sheet total in €", profit: "Annual profit in €" }
@@ -187,6 +200,10 @@ function renderStatic() {
   $("disclaimer-text").textContent = data.meta.disclaimer[state.lang];
   $("footer-disclaimer").textContent = data.meta.disclaimer[state.lang];
   $("footer-meta").textContent = L.meta(data.meta);
+  for (const id of ["report-link", "footer-report"]) {
+    $(id).dataset.subject = L.mailSubject;
+    $(id).dataset.body = L.mailBody;
+  }
 
   const catCounts = {};
   data.rules.forEach((r) => r.categories.forEach((c) => (catCounts[c] = (catCounts[c] || 0) + 1)));
@@ -250,7 +267,7 @@ function renderRule({ r, rel }) {
       ${r.milestones?.length ? `<h3>${esc(L.milestones)}</h3><ul class="milestones">${r.milestones.map((m) => `<li><time>${fmtDate(m.date)}</time> ${esc(m.label[lang])}</li>`).join("")}</ul>` : ""}
       <h3>${esc(L.sources)}</h3>
       <ul class="sources">${r.sources.map((s) => `<li><a href="${esc(s)}" target="_blank" rel="noopener">${esc(new URL(s).hostname.replace(/^www\./, ""))}</a></li>`).join("")}</ul>
-      <p class="fine">${esc(L.lastVerified)}: ${fmtDate(r.lastVerified)} · <span class="badge">${esc(r.reviewedBy ? L.reviewed : L.aiDraft)}</span> · ID <code>${esc(r.id)}</code></p>
+      <p class="fine">${esc(L.lastVerified)}: ${fmtDate(r.lastVerified)} · <span class="badge">${esc(r.reviewedBy ? L.reviewed : L.aiDraft)}</span> · ID <code>${esc(r.id)}</code> · <a href="#" data-contact data-subject="${esc(L.mailRuleSubject(r))}" data-body="${esc(L.mailRuleBody(r))}">${esc(L.reportRule)}</a></p>
     </details>
   </li>`;
 }
@@ -317,6 +334,7 @@ async function init() {
     r._search = searchText(r);
   });
   bind();
+  initContact();
   update({ full: true });
   if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
 }
