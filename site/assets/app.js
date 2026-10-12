@@ -5,13 +5,13 @@ const UI = {
   de: {
     tagline: "Gesetze & Regeln für CRM, E-Commerce, Buchhaltung, HR und ERP in Deutschland – für Unternehmer filterbar, für KI maschinenlesbar.",
     disclaimerTitle: "Keine Rechtsberatung.",
-    search: "Suchen: Gesetz, Paragraph, Stichwort (z. B. E-Rechnung, § 312k, Cookies) …",
+    search: "Suchen, z. B. E-Rechnung, § 312k …",
     reset: "Filter zurücksetzen",
     categories: "Kategorien",
     status: "Status",
     jurisdiction: "Ebene",
     profileTitle: "Betroffenheits-Check",
-    profileHint: "– welche Regeln betreffen mein Unternehmen?",
+    profileHint: "Welche Regeln betreffen mein Unternehmen?",
     businessModel: "Geschäftsmodell",
     activities: "Was trifft auf dein Unternehmen zu?",
     onlyRelevant: "Nur Regeln anzeigen, die mich (wahrscheinlich) betreffen",
@@ -35,6 +35,10 @@ const UI = {
     empty: "Keine Regeln gefunden. Filter anpassen?",
     imprint: "Impressum",
     reportNav: "Gesetz melden",
+    filters: "Filter",
+    filterToggle: (n) => (n ? `Filter (${n})` : "Filter"),
+    showResults: "Ergebnisse anzeigen",
+    footer: (m) => `Keine Rechtsberatung · mit KI erstellt · Stand ${m.lastUpdated}`,
     reportRule: "Fehler melden",
     mailSubject: "ERP-Rechtsradar: Gesetz fehlt / Korrektur",
     mailBody: "Hallo,\n\nfolgendes Gesetz fehlt bzw. ist nicht korrekt:\n\nGesetz / Paragraph:\nLink zum Gesetz:\nBeschreibung:\n",
@@ -47,13 +51,13 @@ const UI = {
   en: {
     tagline: "Laws & rules for CRM, e-commerce, accounting, HR and ERP in Germany – filterable for business owners, machine-readable for AI.",
     disclaimerTitle: "Not legal advice.",
-    search: "Search: law, section, keyword (e.g. e-invoice, § 312k, cookies) …",
+    search: "Search, e.g. e-invoice, § 312k …",
     reset: "Reset filters",
     categories: "Categories",
     status: "Status",
     jurisdiction: "Level",
     profileTitle: "Applicability check",
-    profileHint: "– which rules affect my business?",
+    profileHint: "Which rules affect my business?",
     businessModel: "Business model",
     activities: "What applies to your business?",
     onlyRelevant: "Only show rules that (probably) affect me",
@@ -77,6 +81,10 @@ const UI = {
     empty: "No rules found. Adjust filters?",
     imprint: "Legal notice",
     reportNav: "Report a law",
+    filters: "Filters",
+    filterToggle: (n) => (n ? `Filters (${n})` : "Filters"),
+    showResults: "Show results",
+    footer: (m) => `Not legal advice · AI-generated · as of ${m.lastUpdated}`,
     reportRule: "Report an error",
     mailSubject: "ERP-Rechtsradar: missing law / correction",
     mailBody: "Hello,\n\nthe following law is missing or incorrect:\n\nLaw / section:\nLink to the law:\nDescription:\n",
@@ -198,12 +206,11 @@ function renderStatic() {
   $("search").placeholder = L.search;
   $("search").value = state.q;
   $("disclaimer-text").textContent = data.meta.disclaimer[state.lang];
-  $("footer-disclaimer").textContent = data.meta.disclaimer[state.lang];
-  $("footer-meta").textContent = L.meta(data.meta);
-  for (const id of ["report-link", "footer-report"]) {
-    $(id).dataset.subject = L.mailSubject;
-    $(id).dataset.body = L.mailBody;
-  }
+  $("footer-meta").textContent = L.footer(data.meta);
+  $("footer-meta").title = L.meta(data.meta);
+  $("report-link").dataset.subject = L.mailSubject;
+  $("report-link").dataset.body = L.mailBody;
+  $("filter-close").textContent = L.showResults;
 
   const catCounts = {};
   data.rules.forEach((r) => r.categories.forEach((c) => (catCounts[c] = (catCounts[c] || 0) + 1)));
@@ -272,7 +279,17 @@ function renderRule({ r, rel }) {
   </li>`;
 }
 
+function activeFilterCount() {
+  return state.cats.size + state.statuses.size + state.jur.size + (state.q.trim() ? 1 : 0) + (profileActive() ? 1 : 0);
+}
+
+function setFiltersOpen(open) {
+  document.body.classList.toggle("filters-open", open);
+  $("filter-toggle").setAttribute("aria-expanded", open);
+}
+
 function renderList() {
+  $("filter-toggle").textContent = t().filterToggle(activeFilterCount());
   const items = filtered();
   $("count").textContent = t().count(items.length, data.rules.length);
   $("rules").innerHTML = items.length ? items.map(renderRule).join("") : `<li class="empty">${esc(t().empty)}</li>`;
@@ -291,6 +308,9 @@ function update({ full = false } = {}) {
 // ---------- events ----------
 function bind() {
   $("search").addEventListener("input", (e) => { state.q = e.target.value; update(); });
+  $("filter-toggle").addEventListener("click", () => setFiltersOpen(!document.body.classList.contains("filters-open")));
+  $("filter-close").addEventListener("click", () => { setFiltersOpen(false); window.scrollTo({ top: 0 }); });
+  document.addEventListener("keydown", (e) => e.key === "Escape" && setFiltersOpen(false));
   $("lang-toggle").addEventListener("click", () => { state.lang = state.lang === "de" ? "en" : "de"; update({ full: true }); });
   $("reset").addEventListener("click", () => {
     Object.assign(state, { q: "", cats: new Set(), statuses: new Set(), jur: new Set(), onlyRelevant: false, profile: { businessModels: [], activities: [] } });
@@ -298,7 +318,7 @@ function bind() {
     $("profile").open = false;
     update({ full: true });
   });
-  document.querySelector(".controls").addEventListener("click", (e) => {
+  $("sidebar").addEventListener("click", (e) => {
     const b = e.target.closest(".chip");
     if (!b) return;
     const set = { cat: state.cats, status: state.statuses, jur: state.jur }[b.dataset.group];

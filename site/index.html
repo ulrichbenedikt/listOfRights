@@ -11,51 +11,42 @@
   <script type="module" src="assets/app.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap header-row">
-      <div>
-        <h1 class="brand">ERP-Rechtsradar</h1>
-        <p class="tagline" data-i18n="tagline"></p>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="./" class="brand">ERP-Rechtsradar</a>
+      <div class="topbar-actions">
+        <a href="#" id="report-link" class="btn btn-primary" data-contact data-i18n="reportNav"></a>
+        <button type="button" id="lang-toggle" class="btn btn-ghost" aria-label="Sprache wechseln / switch language">EN</button>
       </div>
-      <nav class="header-nav">
-        <a href="#" id="report-link" class="report-cta" data-contact data-i18n="reportNav"></a>
-        <a href="rules.json">JSON</a>
-        <a href="rules.md">Markdown</a>
-        <a href="llms.txt">llms.txt</a>
-        <button type="button" id="lang-toggle" class="lang-toggle" aria-label="Sprache wechseln / switch language">EN</button>
-      </nav>
     </div>
   </header>
 
-  <div class="disclaimer" role="note">
-    <div class="wrap"><strong data-i18n="disclaimerTitle"></strong> <span id="disclaimer-text"></span></div>
-  </div>
-
-  <main class="wrap">
-    <section class="controls" aria-label="Filter">
-      <div class="search-row">
-        <input type="search" id="search" autocomplete="off">
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Filter">
+      <div class="sidebar-head">
+        <h2 class="sidebar-title" data-i18n="filters"></h2>
         <button type="button" id="reset" class="link-btn" data-i18n="reset"></button>
       </div>
+
+      <input type="search" id="search" class="search" autocomplete="off">
+
+      <fieldset class="filter-group">
+        <legend data-i18n="status"></legend>
+        <div class="chips" id="status-chips"></div>
+      </fieldset>
 
       <fieldset class="filter-group">
         <legend data-i18n="categories"></legend>
         <div class="chips" id="cat-chips"></div>
       </fieldset>
 
-      <div class="filter-split">
-        <fieldset class="filter-group">
-          <legend data-i18n="status"></legend>
-          <div class="chips" id="status-chips"></div>
-        </fieldset>
-        <fieldset class="filter-group">
-          <legend data-i18n="jurisdiction"></legend>
-          <div class="chips" id="jur-chips"></div>
-        </fieldset>
-      </div>
+      <fieldset class="filter-group">
+        <legend data-i18n="jurisdiction"></legend>
+        <div class="chips" id="jur-chips"></div>
+      </fieldset>
 
       <details class="profile" id="profile">
-        <summary><span data-i18n="profileTitle"></span> <span class="profile-hint" data-i18n="profileHint"></span></summary>
+        <summary><span data-i18n="profileTitle"></span><span class="profile-hint" data-i18n="profileHint"></span></summary>
         <div class="profile-body">
           <div class="profile-numbers" id="profile-numbers"></div>
           <fieldset class="filter-group">
@@ -64,23 +55,42 @@
           </fieldset>
           <fieldset class="filter-group">
             <legend data-i18n="activities"></legend>
-            <div class="checks checks-grid" id="profile-activities"></div>
+            <div class="checks checks-list" id="profile-activities"></div>
           </fieldset>
           <label class="toggle"><input type="checkbox" id="only-relevant"> <span data-i18n="onlyRelevant"></span></label>
           <p class="fine" data-i18n="profileNote"></p>
         </div>
       </details>
-    </section>
 
-    <p class="result-count" id="count" aria-live="polite"></p>
-    <ol class="rules" id="rules"></ol>
-  </main>
+      <button type="button" class="btn btn-primary sidebar-close" id="filter-close"></button>
+    </aside>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p id="footer-disclaimer"></p>
-      <p id="footer-meta"></p>
-      <p><a href="#" id="footer-report" data-contact data-i18n="reportNav"></a> · <a href="impressum.html" data-i18n="imprint"></a> · <a href="datenschutz.html" data-i18n="privacy"></a> · <a href="schema.json">Schema</a></p>
+    <main class="content">
+      <section class="intro">
+        <p class="tagline" data-i18n="tagline"></p>
+        <p class="disclaimer" role="note"><strong data-i18n="disclaimerTitle"></strong> <span id="disclaimer-text"></span></p>
+      </section>
+
+      <div class="toolbar">
+        <button type="button" class="btn btn-ghost filter-toggle" id="filter-toggle" aria-controls="sidebar" aria-expanded="false"></button>
+        <p class="result-count" id="count" aria-live="polite"></p>
+      </div>
+
+      <ol class="rules" id="rules"></ol>
+    </main>
+  </div>
+
+  <footer class="bottombar">
+    <div class="bottombar-inner">
+      <span id="footer-meta" class="footer-meta"></span>
+      <nav class="footer-links">
+        <a href="rules.json">JSON</a>
+        <a href="rules.md">Markdown</a>
+        <a href="llms.txt">llms.txt</a>
+        <span class="sep" aria-hidden="true"></span>
+        <a href="impressum.html" data-i18n="imprint"></a>
+        <a href="datenschutz.html" data-i18n="privacy"></a>
+      </nav>
     </div>
   </footer>
 </body>
